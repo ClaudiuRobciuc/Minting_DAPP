@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xb4e1aa28061577f06b1635a041c52e73a80c6e15",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xb4e1aa28061577f06b1635a041c52e73a80c6e15",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Our Test Collection",
+  "SYMBOL": "TSOY",
+  "MAX_SUPPLY": 5,
+  "WEI_COST": 4000000000000000000,
+  "DISPLAY_COST": 0.1,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/our-test-collection",
+  "SHOW_BACKGROUND": true
+}
