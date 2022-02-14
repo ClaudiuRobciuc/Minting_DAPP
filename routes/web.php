@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.collection.about');
 });
+
+Route::get('/dapp', function () {
+    return view('pages.dapp.mint');
+});
+
+Route::get('/mint', [
+    'as' => 'app.nft.mint', function (){
+        return;
+    }
+]);

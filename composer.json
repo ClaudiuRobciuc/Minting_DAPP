@@ -11,7 +11,10 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "league/flysystem": "*"
+        "laravel/ui": "^3.4",
+        "laravelcollective/html": "^6.3",
+        "league/flysystem": "*",
+        "rootsoft/laravel-ipfs": "^0.0.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -26,7 +29,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers/Helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

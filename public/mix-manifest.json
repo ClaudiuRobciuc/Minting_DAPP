@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/dapp.js": "/js/dapp.js",
+    "/css/main.css": "/css/main.css",
     "/css/app.css": "/css/app.css",
     "/js/mintDapp/config/settings/config.json": "/js/mintDapp/config/settings/config.json",
     "/js/mintDapp/config/settings/abi.json": "/js/mintDapp/config/settings/abi.json"
