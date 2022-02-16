@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap');
 
 // Variables
 @import 'variables';
@@ -10,14 +10,13 @@
 
 @import 'index';
 
-
 body {
-    font-family: 'Open Sans Condensed' !important;
-    font-size: 21px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 17px !important;
 }
 
 .dropdown-item {
-    font-size: 17px !important;
+    font-size: 15px !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
