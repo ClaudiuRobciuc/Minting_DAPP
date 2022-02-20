@@ -9,8 +9,13 @@
     <hr class="solid">
     <div class="container">
         <h1 class="font-weight-light text-center">About our collection</h1>
-        <p>What is Lorem Ipsum?
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </br>
+        <p>
+            New NFT project on the Ehthereum Blockchain, the Fehu D.A.O. is making promises to break the mold and release a collection where the assets held are more important than the art as it appears.
+        </br></br>
+            With long-term goals in mind that support the financial success of their community, many aspects of the collection are worth looking out for throughout 2022.
+        </br></br>
+            The Fehu D.A.O is an NFT mint collection and community that believe in the power and utility of NFTs. They aim to remind the world of how useful NFTs are meant to be, as more than just a means of finding an avatar or profile picture.
         </p>
         @include('inc.nftcarousel') 
     </div>
