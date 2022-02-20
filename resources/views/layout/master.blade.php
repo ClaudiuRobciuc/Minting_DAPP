@@ -24,8 +24,8 @@
   <body>
     @include('inc.navbar')
     @include('inc.messages')
-        @yield('content')
-        @yield('scripts')
+    @yield('content')
+    @yield('scripts')
 </body>
 <footer>
     @include('inc.footer')
