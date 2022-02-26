@@ -1,9 +1,10 @@
 <!--Foots-->
-<footer class="footer" style="background-image: url({{asset('storage/images/footer.png')}});">
+<footer class="footer" style="background-image: url({{asset('storage/images/footer.png')}}); background-position-y: 75%;
+background-position-x: 60%;">
     <div class="container" style="display:block; padding:25px 0 0 0">
         <div class="row">
             <div class="col-sm-2">
-                <img src="{{ asset('storage/images/f_vectorial222.png') }}" alt="" width="200" height="180">
+                <img src="{{ asset('storage/images/f_vectorial222.png') }}" style="" width="200" height="180">
             </div>
             <div class="col-sm-3">
                 <p>
