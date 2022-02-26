@@ -49,15 +49,16 @@
 
     <hr class="solid">
     <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
-    <div class="container" style="display:block" id="faq">
-        <h1 class="font-weight-light text-center">FAQ</h1> 
-        @include('inc.faq2') 
-    </div>
-    <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
     <div class="container" style="display:block" id="roadmap">
         <h1 class="font-weight-light text-center">RoadMap</h1> 
         @include('inc.timeline') 
+    </div>
+
+    <hr class="solid">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="faq">
+        <h1 class="font-weight-light text-center">FAQ</h1> 
+        @include('inc.faq2') 
     </div>
     <hr class="solid">
     <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
