@@ -1,59 +1,34 @@
 <!--Foots-->
-<footer class="footer">
-    <div class="container">
+<footer class="footer" style="background-image: url({{asset('storage/images/footer.png')}});">
+    <div class="container" style="display:block; padding:25px 0 0 0">
         <div class="row">
+            <div class="col-sm-2">
+                <img src="{{ asset('storage/images/f_vectorial222.png') }}" alt="" width="200" height="180">
+            </div>
             <div class="col-sm-3">
                 <p>
-                    OnlineGallery A/S
+                    CopyRight @2022
                 </p>
                 <p>
-                    Telefon: +45-12345678
+                    Fehu Token | Powered by
                 </p>
                 <p>
-                    <p>
-                        E-mails
-                        <br>
-                        - mail@ogallery.dk
-                        <br>
-                        - mail@upthere.dk
-                    </p>
+                    Fehu Team
                 </p>
             </div>
-            <div class="col-sm-3">
-                Kontakt Salg (mail link)
-                <br>
-                Kontakt Support (mail link)
+            <div class="col-sm-1">
             </div>
             <div class="col-sm-3">
-                Disclaimer
-                <br>
-                DCMA (regarding pictures, files, etc!)
-                <br>
-                GDPR (cookies and/or sessions!)
-                <br>
-                FAQ (Frequently Asked Questions / Ofte Stillede Spørgsmål)
-                <br>
-                Privacy Information (fotroligheds politik)
-                <br>
-                Terms of Usage (brug og regler)
-                <br>
-                Sitemap
-                <br>
-
+                <p>Stay Connected
+                </p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-telegram"></a>
+                <a href="#" class="fa fa-youtube-play"></a>
             </div>
             <div class="col-sm-3">
-                Jobs
-                <br>
-                Karriere
-            </div>
-        </div>
-    </div>
-</footer>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                CVR: xxx
+                <p>ETH Contract: xxxxxxx
+                </p>
             </div>
         </div>
     </div>

@@ -17,12 +17,8 @@ Route::get('/', function () {
     return view('pages.collection.about');
 });
 
-Route::get('/dapp', function () {
-    return view('pages.dapp.mint');
-});
-
 Route::get('/mint', [
     'as' => 'app.nft.mint', function (){
-        return;
+        return view('pages.dapp.mint');
     }
 ]);

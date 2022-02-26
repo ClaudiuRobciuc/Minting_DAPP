@@ -2,12 +2,28 @@
 @section('content')
 <!-- Page Content -->
 <section class="py-5">
-    <div class="container">
-        <h1 class="font-weight-light text-center">Collection</h1>
-        <img src="{{ asset('storage/images/card.jpg') }}" width="100%" height="90%" alt="Flowers in Chania">      
+    <div class="container" style="display:block">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="font-weight:700; padding: 10px">Extraordinary <span class="gradient-text">NFT</span></h1>
+                <div class="row" style="margin-top:20%">
+                    <div class="col-md-5">
+                        <a class="btn btn-grad btn-grad-purple" href="#" role="button">Fehu Token</a>
+                    </div>
+                    <div class="col-md-5">
+                        <a class="btn btn-grad btn-grad-white" href="#" role="button">View on OpenSea</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ asset('storage/images/Heading.png') }}" width="100%" height="100%" alt="Flowers in Chania">      
+            </div>
+            
+        </div>
     </div>
     <hr class="solid">
-    <div class="container">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="collection">
         <h1 class="font-weight-light text-center">About our collection</h1>
         </br>
         <p>
@@ -17,19 +33,34 @@
         </br></br>
             The Fehu D.A.O is an NFT mint collection and community that believe in the power and utility of NFTs. They aim to remind the world of how useful NFTs are meant to be, as more than just a means of finding an avatar or profile picture.
         </p>
-        @include('inc.nftcarousel') 
     </div>
+
     <hr class="solid">
-    <div class="container">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="utility">
+        <h1 class="font-weight-light text-center">Utilities</h1> 
+    </div>
+
+    <hr class="solid">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="rarity">
         <h1 class="font-weight-light text-center">Rarity</h1> 
-        Rarity
     </div>
+
     <hr class="solid">
-    <div class="container">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="faq">
         <h1 class="font-weight-light text-center">FAQ</h1> 
         @include('inc.faq2') 
     </div>
     <hr class="solid">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <div class="container" style="display:block" id="roadmap">
+        <h1 class="font-weight-light text-center">RoadMap</h1> 
+        @include('inc.timeline') 
+    </div>
+    <hr class="solid">
+    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
 </section>
 @endsection
 
@@ -59,4 +90,5 @@
     });
 });
 </script>
+
 @endsection

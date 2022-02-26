@@ -2,7 +2,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:wght@400;600;700;800&display=swap');
 
-@import "~font-awesome/scss/font-awesome.scss";
+@import "~font-awesome/scss/font-awesome";
 
 // Variables
 @import 'variables';
@@ -14,19 +14,22 @@
 
 @import 'faq';
 
+@import 'roadmap';
+
+@import 'faicons';
+
 body {
     font-family: 'Open Sans', sans-serif !important;
     font-size: 17px !important;
+    background: #1b1b1b;
+    color: white;
+    padding-top: 40px;
 }
 
 .dropdown-item {
     font-size: 15px !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
-}
 hr.solid {
     border-top: 2.5px solid rgb(0, 0, 0);
 }
@@ -34,6 +37,78 @@ hr.solid {
   font-size: 26px;
 }
 
+.accordion-item-body-content {
+  padding: 1rem;
+  background-color: #dfdfdf;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  -o-border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  border-radius: 5px;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  background-color: #d3d3d3;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-grad-purple {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.btn-grad-white {background-image: linear-gradient(to right, #ee9bff 0%, #c482fd  51%, #ed91ff  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #7a5050;
+   border-radius: 10px;
+   display: block;
+ }
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.mint {
+  padding: .5rem 3rem;
+  color: yellow;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  font-size: 20px;
+}
+
+.gradient-text{
+    background-color: #e559f1;
+    background-image: linear-gradient(45deg, #a948c7, #71acc1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.divider{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -72,14 +147,6 @@ hr.solid {
       font-size: 3.5rem;
     }
   }
-
-  @media (min-width: 988px) {
-    .navbar-nav.navbar-center {
-        position: absolute;
-        left: 50%;
-        transform: translatex(-50%);
-    }
-    .navbar-brand {
-        margin-left: 30rem;
-    }
+  @media screen and (max-width: 768px) {
+    body { padding-top: 30px; }
   }
