@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon_fehu.png.png" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
 
-    <link rel="apple-touch-icon" href="{{ asset('storage/images/logo192.png') }}" />
+    <link rel="apple-touch-icon" href="{{ asset('storage/images/favicon_fehu.png') }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
