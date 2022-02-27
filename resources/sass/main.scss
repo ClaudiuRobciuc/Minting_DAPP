@@ -101,6 +101,7 @@ hr.solid {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    font-weight: 900;
 }
 
 .divider{
@@ -146,7 +147,11 @@ hr.solid {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+    .btn-grad {
+      display: inline-block;
+    }
   }
   @media screen and (max-width: 768px) {
     body { padding-top: 30px; }
+    .banner { text-align: center; }
   }

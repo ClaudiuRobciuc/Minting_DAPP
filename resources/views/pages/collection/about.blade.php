@@ -5,7 +5,7 @@
     <div class="container" style="display:block">
         <div class="row">
             <div class="col-md-6">
-                <h1 style="font-weight:700; padding: 10px">Extraordinary <span class="gradient-text">NFT</span></h1>
+                <h1 class="banner" style="font-weight:700; padding: 10px">Extraordinary <span class="gradient-text">NFT</span></h1>
                 <div class="row" style="margin-top:20%">
                     <div class="col-md-5">
                         <a class="btn btn-grad btn-grad-purple" href="#" role="button">Fehu Token</a>
@@ -60,8 +60,7 @@
         <h1 class="font-weight-light text-center">FAQ</h1> 
         @include('inc.faq2') 
     </div>
-    <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    
 </section>
 @endsection
 

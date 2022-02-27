@@ -2,7 +2,18 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
     color: #fff;
     height: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: 24rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        height: 34rem;
+    }
 }

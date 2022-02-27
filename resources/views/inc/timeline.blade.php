@@ -1,45 +1,42 @@
-<div class="container py-5">
-
-    <!-- For demo purpose -->
-    <div class="row text-center text-white mb-5">
-        <div class="col-lg-8 mx-auto">
-            <h1 class="display-4">Bootstrap timeline</h1>
-            <p class="lead mb-0">Build a responsive vertical timeline using Bootstrap 4. </p>
-            <p class="lead">Snippet by<a href="https://bootstrapious.com/snippets" class="text-white">
-                <u>Bootstrapious</u></a></p>
-            </div>
-        </div><!-- End -->
-
-
-        <div class="row">
-            <div class="col-lg-7 mx-auto">
-                
-                <!-- Timeline -->
-                <ul class="timeline">
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
-                        <p class="text-small mt-2 font-weight-light">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam! Deleniti.</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                    </li>
-                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                        <div class="timeline-arrow"></div>
-                        <h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
-                        <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-                        <p class="text-small mt-2 font-weight-light">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
-                    </li>
-                </ul><!-- End -->
-
-            </div>
-        </div>
+<section class="ps-timeline-sec">
+    <div class="container">
+        <ol class="ps-timeline">
+            <li>
+                <div class="img-handler-top">
+                    <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_03.png" alt=""/>
+                </div>
+                <div class="ps-bot">
+                    <p>Do you have a recent injury or long term pain?</p>
+                </div>
+                <span class="ps-sp-top">01</span>
+            </li>
+            <li>
+                <div class="img-handler-bot">
+                    <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_13.png" alt=""/>
+                </div>
+                <div class="ps-top">
+                    <p>Have you tried Physiotherapy, Chiropractor or your GP without the pain free results?</p>
+                </div>
+                <span class="ps-sp-bot">02</span>
+            </li>
+            <li>
+                <div class="img-handler-top">
+                    <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_05.png" alt=""/>
+                </div>
+                <div class="ps-bot">
+                    <p>Let Physology assess and treat your pain with our trusted revolusionary approach.</p>
+                </div>
+                <span class="ps-sp-top">03</span>
+            </li>
+            <li>
+                <div class="img-handler-bot">
+                    <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_10.png" alt=""/>
+                </div>
+                <div class="ps-top">
+                    <p>Join our happy family of pain free clients.</p>
+                </div>
+                <span class="ps-sp-bot">04</span>
+            </li>
+        </ol>
     </div>
+</section>
