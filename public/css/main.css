@@ -14322,10 +14322,13 @@ textarea.form-control-lg {
 }
 
 .footer-elements {
-  display: inline-block;
-  padding: 25px 0 0 25px;
+  padding: 25px 0 0 0;
   margin-left: 5%;
   text-align: center;
+}
+
+.footer-container {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -14334,9 +14337,12 @@ textarea.form-control-lg {
   }
 
   .footer-elements {
-    display: inline-block;
     padding: 0;
     margin-left: 0%;
+  }
+
+  .footer-container {
+    display: inherit;
   }
 }
 @media screen and (max-width: 578px) {
@@ -14805,5 +14811,14 @@ hr.solid {
 
   .banner {
     text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    flex-flow: column-reverse;
   }
 }

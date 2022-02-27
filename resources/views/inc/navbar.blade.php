@@ -30,7 +30,7 @@
             </ul>
         </li>
         <li class="nav-item">
-          <a class="btn btn-grad btn-grad-purple nav-link" style="font-size: 20px; margin:0; padding:5px 15px; color:#d8ff04f5" href="{{ route('app.nft.mint') }}">MINT</a>
+          <a class="btn btn-grad btn-grad-purple nav-link" style="font-size: 20px; margin:0; padding:5px 15px; color:#d8ff04f5; display:block" href="{{ route('app.nft.mint') }}">MINT</a>
         </li>
       </ul>
     </div>

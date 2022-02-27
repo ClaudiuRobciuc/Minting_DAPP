@@ -1,8 +1,8 @@
 <!--Foots-->
 <footer class="footer" style="background-image: url({{asset('storage/images/footer.png')}}); background-position-y: 75%;
 background-position-x: 60%;">
-    <div class="container footer-elements">
-        <div class="row">
+    <div class="container footer-container">
+        <div class="row footer-elements">
             <div class="col-sm-6 col-md-3 col-xs-12">
                 <img src="{{ asset('storage/images/f_vectorial222.png') }}" style="" width="200" height="180">
             </div>

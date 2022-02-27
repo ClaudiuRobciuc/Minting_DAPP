@@ -155,3 +155,13 @@ hr.solid {
     body { padding-top: 30px; }
     .banner { text-align: center; }
   }
+
+  @media screen and (max-width: 992px) {
+    .nav-link {
+      text-align: center;
+    }
+    .navbar-nav {
+      flex-flow: column-reverse;
+    }
+  }
+  
