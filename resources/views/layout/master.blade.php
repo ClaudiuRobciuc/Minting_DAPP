@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" href="./favicon_fehu.png.png" />
+    <link rel="icon" href="{{ asset('storage/images/favicon_fehu.png') }}" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
 
     <link rel="apple-touch-icon" href="{{ asset('storage/images/favicon_fehu.png') }}" />
