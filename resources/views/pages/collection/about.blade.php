@@ -66,6 +66,14 @@
 
 @section('scripts')
 <script>
+    $("a[href^='#']").click(function(e) {
+        e.preventDefault();
+        var position = $($(this).attr("href")).offset().top - 230;
+
+        $("body, html").animate({
+            scrollTop: position
+        }, 5 );
+    });
     const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
     accordionItemHeaders.forEach(accordionItemHeader => {
@@ -90,5 +98,4 @@
     });
 });
 </script>
-
 @endsection

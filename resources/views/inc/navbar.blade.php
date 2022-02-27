@@ -10,7 +10,7 @@
             <a class="nav-link" href="#collection">Collection</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#utilities">Utilities</a>
+            <a class="nav-link" href="#utility">Utilities</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#rarity">Rarity</a>
