@@ -71,7 +71,6 @@
         var offset = 220;
         if ($(window).width() < 992){
             offset = 370;
-            console.log(offset);
         }
         var position = $($(this).attr("href")).offset().top - offset;
 
