@@ -68,14 +68,19 @@
 <script>
     $("a[href^='#']").click(function(e) {
         e.preventDefault();
-        var position = $($(this).attr("href")).offset().top - 230;
+        var offset = 220;
+        if ($(window).width() < 992){
+            offset = 370;
+            console.log(offset);
+        }
+        var position = $($(this).attr("href")).offset().top - offset;
 
         $("body, html").animate({
             scrollTop: position
         }, 5 );
     });
-    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
     accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
         // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
