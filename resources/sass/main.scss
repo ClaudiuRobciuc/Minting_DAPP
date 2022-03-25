@@ -110,6 +110,20 @@ hr.solid {
     margin-right: auto;
     width: 25%;
 }
+
+.rarity{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-self: stretch;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 0.97;
+  --color: 50, 50, 50;
+  background-color: rgba(var(--color), var(--bs-bg-opacity)) !important;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 

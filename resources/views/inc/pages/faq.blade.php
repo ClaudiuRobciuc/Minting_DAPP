@@ -42,17 +42,6 @@ For Mint, you have to own FEHU token (feutoken.com) and for resale purposes you 
   </div>
   <div class="accordion-item">
     <div class="accordion-item-header">
-      How do I purchase a Fehu NFT?
-    </div>
-    <div class="accordion-item-body">
-      <div class="accordion-item-body-content">
-        In order to purchase a Fehu NFT, you will need to conduct two important steps. First, you will need to purchase ETH from a crypto-currency exchange such as Coinbase, Gemini, or Binance. Once you have completed that step, you will need to transfer your ETH into a non-custodial digital wallet like MetaMask, Portis or WalletConnect compatible wallets.
-For Mint, you have to own FEHU token (feutoken.com) and for resale purposes you can use either FEHU coin or Fehu. These wallets connect to the FehuNFT website and allow you to mint an NFT.  For your reference, there will be a link to show  in detail how to set up a crypto wallet, as well as the basic steps to take to send ETH to your wallet. 
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <div class="accordion-item-header">
       Can I resell my Fehu NFT?
     </div>
     <div class="accordion-item-body">

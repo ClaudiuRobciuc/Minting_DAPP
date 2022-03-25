@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
   <div class="container">
-    <a class="navbar-brand" style="font-size: 24px;" href="#"><img src="{{ asset('storage/images/f_vectorial222.png') }}" alt="" width="65" height="44">Fehu NFT</a>
+    <a class="navbar-brand" style="font-size: 24px;" href="#top"><img src="{{ asset('storage/images/f_vectorial222.png') }}" alt="" width="65" height="44">Fehu NFT</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

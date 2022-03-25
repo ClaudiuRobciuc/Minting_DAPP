@@ -22,12 +22,12 @@
    
   </head>
   <body>
-    @include('inc.navbar')
-    @include('inc.messages')
+    @include('inc.components.navbar')
+    @include('inc.components.messages')
     @yield('content')
     @yield('scripts')
 </body>
 <footer>
-    @include('inc.footer')
+    @include('inc.pages.footer')
 </footer>
 </html>
