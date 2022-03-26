@@ -24,7 +24,7 @@
         </div>
     </div>
     <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <img src="{{ asset('storage/images/linear-knot-divider.png') }}" class="divider"> 
     <div class="container" style="display:block" id="collection">
         <h1 class="font-weight-light text-center">About our collection</h1>
         </br>
@@ -38,13 +38,13 @@
     </div>
 
     <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <img src="{{ asset('storage/images/linear-knot-divider.png') }}" class="divider">  
     <div class="container" style="display:block" id="utility">
         <h1 class="font-weight-light text-center">Utilities</h1> 
     </div>
 
     <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <img src="{{ asset('storage/images/linear-knot-divider.png') }}" class="divider"> 
     <div class="container" style="display:block" id="rarity">
         <h1 class="font-weight-light text-center">Rarity</h1> 
         <div class="row">
@@ -65,14 +65,14 @@
     </div>
 
     <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <img src="{{ asset('storage/images/linear-knot-divider.png') }}" class="divider"> 
     <div class="container" style="display:block" id="roadmap">
         <h1 class="font-weight-light text-center">RoadMap</h1> 
         @include('inc.pages.timeline') 
     </div>
 
     <hr class="solid">
-    <img src="{{ asset('storage/images/knot.png') }}" class="divider"> 
+    <img src="{{ asset('storage/images/linear-knot-divider.png') }}" class="divider"> 
     <div class="container" style="display:block" id="faq">
         <h1 class="font-weight-light text-center">FAQ</h1> 
         @include('inc.pages.faq') 
