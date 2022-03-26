@@ -14771,6 +14771,19 @@ hr.solid {
   align-self: stretch;
 }
 
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: -5px;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
 .bg-dark {
   --bs-bg-opacity: 0.97;
   --color: 50, 50, 50;
@@ -14834,5 +14847,14 @@ hr.solid {
 
   .navbar-nav {
     flex-flow: column-reverse;
+  }
+
+  .divider {
+    width: 98%;
+  }
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 3rem;
   }
 }
