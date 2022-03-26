@@ -61,7 +61,7 @@
     <div class="container" style="display:block" id="utility">
         <h1 class="font-weight-light text-center">Utilities</h1> 
         <p>
-            Firstly, besides the value of our NFTs given by the market, each NFT will be its unique system for the holder, which you can use. The capabilities of each NFT is based on its rarity, thus the higher the rarity of the NFT which you hold, the higher the power and benefits you have as a holder. We will be using https://snapshot.org for our voting system since it is widely used and efficient.
+            Firstly, besides the value of our NFTs given by the market, each NFT will be its unique system for the holder, which you can use. The capabilities of each NFT is based on its rarity, thus the higher the rarity of the NFT which you hold, the higher the power and benefits you have as a holder. We will be using <a href="https://snapshot.org" target="_blank">SnapShot</a> for our voting system since it is widely used and efficient.
         </p>
         <p>
             Overall all NFTs will have a core principle, this being granting access through tickets to events ranging from entertainment to business/cultural, based on our community wishes.
