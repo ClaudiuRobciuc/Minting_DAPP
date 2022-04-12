@@ -13,9 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.collection.about');
-});
+Route::get('/', [
+    'as' => 'app.index', function (){
+        return view('pages.collection.index');
+    }
+]);
+
+Route::get('/old', [
+    'as' => 'app.index.old', function (){
+        return view('pages.collection.about');
+    }
+]);
 
 Route::get('/mint', [
     'as' => 'app.nft.mint', function (){

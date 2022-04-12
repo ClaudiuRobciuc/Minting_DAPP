@@ -11,7 +11,10 @@ let webpack = require('webpack');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.options({legacyNodePolyfills: false})
+mix.options({
+  legacyNodePolyfills: false,
+  processCssUrls: false
+})
 
 let dotenvplugin = new webpack.DefinePlugin({
   'process.env': {
@@ -56,4 +59,6 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ])
-    .sass('resources/sass/main.scss', 'public/css');
+    .sass('resources/sass/webpage.scss', 'public/css')
+    .copy('node_modules/font-awesome/fonts', 'public/fonts');
+mix.copy('resources/js/webpage/*.js', 'public/assets/build/js');

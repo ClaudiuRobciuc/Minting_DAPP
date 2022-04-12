@@ -1,8 +1,19 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/dapp.js": "/js/dapp.js",
-    "/css/main.css": "/css/main.css",
+    "/css/webpage.css": "/css/webpage.css",
     "/css/app.css": "/css/app.css",
     "/js/mintDapp/config/settings/config.json": "/js/mintDapp/config/settings/config.json",
-    "/js/mintDapp/config/settings/abi.json": "/js/mintDapp/config/settings/abi.json"
+    "/js/mintDapp/config/settings/abi.json": "/js/mintDapp/config/settings/abi.json",
+    "/fonts/fontawesome-webfont.eot": "/fonts/fontawesome-webfont.eot",
+    "/fonts/fontawesome-webfont.svg": "/fonts/fontawesome-webfont.svg",
+    "/fonts/fontawesome-webfont.ttf": "/fonts/fontawesome-webfont.ttf",
+    "/fonts/fontawesome-webfont.woff": "/fonts/fontawesome-webfont.woff",
+    "/fonts/fontawesome-webfont.woff2": "/fonts/fontawesome-webfont.woff2",
+    "/fonts/FontAwesome.otf": "/fonts/FontAwesome.otf",
+    "/assets/build/js/canvas-x-o.js": "/assets/build/js/canvas-x-o.js",
+    "/assets/build/js/custom.js": "/assets/build/js/custom.js",
+    "/assets/build/js/particles-dark.js": "/assets/build/js/particles-dark.js",
+    "/assets/build/js/plugins.js": "/assets/build/js/plugins.js",
+    "/assets/build/js/popper.min.js": "/assets/build/js/popper.min.js"
 }

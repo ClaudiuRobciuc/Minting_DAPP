@@ -2,32 +2,50 @@
 <html lang="en">
   <head>
   <meta charset="UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" href="{{ asset('storage/images/favicon_fehu.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
-
     <link rel="apple-touch-icon" href="{{ asset('storage/images/favicon_fehu.png') }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#212121"/>
+    <meta name="msapplication-navbutton-color" content="#212121"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#212121"/>
 
+    <!-- Web Fonts 
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet"/>	
+    
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ asset('css/webpage.css') }}" />
+        
+    <!-- Favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+    <script src="{{ asset('js/app.js') }}" defer></script>
+ 
     <meta name="description" content="Fehu NFT Collection" />
     @yield('topinlinescripts')
    
   </head>
   <body>
-    @include('inc.components.navbar')
-    @include('inc.components.messages')
     @yield('content')
     @yield('scripts')
-</body>
+    
+  </body>
 <footer>
-    @include('inc.pages.footer')
+    
 </footer>
 </html>

@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.old_master')
 @section('content')
 <!-- Page Content -->
 <section class="py-5">
