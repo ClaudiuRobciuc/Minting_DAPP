@@ -46,41 +46,30 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto">
 								<li class="nav-item">
-									<a class="nav-link" href="#buy">Buy Tokens</a>
+									<a class="nav-link" href="#about">About</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#concept">Concept</a>
+									<a class="nav-link" href="#utilities">Utilities</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#rarity">Rarity</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#roadmap">Roadmap</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#team">Team</a>
-								</li>
-								<li class="nav-item">
 									<a class="nav-link" href="#faq">FAQ</a>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#contact">Contact</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link no-line" href="#">Variants</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link no-line" href="#">Collections</a>
 									<ul class="background-gradient-dark sub-shadow">
-										<li><a href="index.html">From developers</a></li>
-										<li><a href="index-11.html">Countdown gradient</a></li>
-										<li><a href="index-2.html">Crowdsale</a></li>
-										<li><a href="index-9.html">Azure blockchain - animated</a></li>
-										<li><a href="index-3.html">From developers - dark</a></li>
-										<li><a href="index-4.html">Crowdsale - dark</a></li>
-										<li><a href="index-5.html">From developers - animated</a></li>
-										<li><a href="index-10.html" class="active-subnav">Countdown gradient anime</a></li>
-										<li><a href="index-6.html">Crowdsale - animated</a></li>
-										<li><a href="index-7.html">From developers - anime dark</a></li>
-										<li><a href="index-8.html">Crowdsale - animated dark</a></li>
+										<li><a href="#" class="text-black">Rarible</a></li>
+										<li><a href="#" class="text-black">OpenSea</a></li>
+										<li><a href="#" class="text-black">LooksRare</a></li>
 									</ul>
 								</li>
 								<li class="nav-item mt-2">
-									<a class="btn btn-primary btn-gradient" href="#app" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>ICO Wallet</span></a>
+									<a class="btn btn-primary btn-gradient" href="#app" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>MINT</span></a>
 								</li>
 							</ul>
 						</div>
@@ -93,25 +82,20 @@
 	
 	<!-- Primary Page Layout
 	================================================== -->
-
 	<div class="section full-height hide-over background-light-green-1 background-image-cover" style="background-image: url({{ asset('storage/images/background-blue.png') }});">
-		<div class="section full-height hide-over background-image-cover-bottom" style="background-image: url({{ asset('storage/images/background-home.png') }});">
+		<div class="section full-height hide-over background-image-cover-bottom" style="background-image: url({{ asset('storage/images/background-top.png') }});">
 			<div class="hero-center-wrap">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 text-center align-self-center z-bigger parallax-fade-top">
-							<div class="countdown gradient-ver">
-								<div class="section">
-									<ul>
-										<li><span id="days"></span>days</li>
-										<li><span id="hours"></span>hours</li>
-										<li><span id="minutes"></span>minutes</li>
-										<li><span id="seconds"></span>seconds</li>
-									</ul>
-								</div>
-							</div>
-							<p class="mt-3 mb-4 pb-3 font-weight-normal text-white">The time of great changes.</p>
-							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Buy Tokens</span></a>
+							<h2 class="mt-3 mb-4 pb-3 font-weight-normal text-black">Extraordinary <span class="gradient-text">NFT</span></h2>
+							<p class="mt-3 mb-4 pb-3 font-weight-normal text-black">
+								This is it; the time has arrived! 
+								The opportunity to make the future of decentralization a reality is yours. 
+								It all starts with our NFT collection, which will embark you on a mythical journey through art, while giving you the freedom to choose what you want for the future of the D.A.O.
+							</p>
+							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Fehu Token</span></a>
+							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Buy on OpenSea</span></a>
 						</div>
 					</div>
 				</div>
@@ -120,90 +104,126 @@
 		</div>	
 	</div>
 
-	<div class="section z-bigger padding-top background-gradient-green" id="buy">
+	<div class="section padding-top-big background-gradient-green-re" id="about">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center mt-4" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<a class="btn btn-primary btn-gradient js-tilt" href="#" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Buy Tokens 35% Off</span></a>
-				</div>
-				<div class="col-md-12 mt-5" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<p class="text-center text-white">payment methods</p>
-				</div>
-				<div class="col-md-12 mt-1" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<ul class="payment-methods text-white">
-						<li><img src="{{ asset('storage/images/bitcoin.png') }}" alt=""><p>bitcoin</p></li>
-						<li><img src="{{ asset('storage/images/etherium-light.png') }}" alt=""><p>ethereum</p></li>
-						<li><img src="{{ asset('storage/images/litecoin.png') }}" alt=""><p>litecoin</p></li>
-						<li><img src="{{ asset('storage/images/usd-light.png') }}" alt=""><p>US Dollars</p></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="section padding-top-big">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<ul class="logo-wrap">
-							<li><img src="{{ asset('storage/images/logos/1-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/2-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/3-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/4-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/5-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/6-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/7-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/8-light.png') }}" alt=""></li>
-							<li><img src="{{ asset('storage/images/logos/9-light.png') }}" alt=""></li>
-						</ul>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</div> 
-
-	<div class="section padding-top-big background-gradient-green-re" id="concept">
-		<div class="container">
-			<div class="row">
+			<div class="row" style="font-weight:400;">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
-						<div class="back-title">concept</div>
-						<h3 class="text-white">We are the only global<br>mining operation.</h3>
-						<p class="color-pr">Lend your digital assets to others for trading and earn an interest through margin trading loans.</p>
+						<div class="back-title">about</div>
+						<h3 class="text-black">Our collection</h3>
 					</div>
 				</div>
+				
+				<div class="col-md-12">
+					<p class="text-black">
+						Our new NFT project on the Ethereum Blockchain, is challenging the current status quo and releases a collection where the assets are mintable with our own crypto token (FEHU), and feature utility from the get-go.
+					</br></br>
+					With a robust long-term vision revolving around empowering the community to build their own D.A.O and support their financial success, there are plenty of things to look forward to in 2022.
+					</br></br>
+					The Fehu D.A.O debuts with a mintable NFT collection capitalizing on the community’s yearning for utility. Their main purpose is to prove once and for all that NFTs are not just avatars, but the future of decentralization. 
+					</p>
+					<p class="text-black">
+						Besides constant new releases and a story that takes shape before your eyes, everything you own comes with decision-making power. You get to build the Web 3.0 universe and a business alongside us, while enjoying infinite perks:
+					</p>
+				</div>
+			</div>	
+			<div class="row" style="padding-top:2rem">
 				<div class="col-md-4" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
 					<div class="concept-box">
-						<img class="mb-4" src="{{ asset('storage/images/con-1.svg') }}" alt="">
-						<h5 class="text-white">Independent</h5>
-						<p class="text-grey">Our mobility concept enables super-simple transportation and worldwide deployment.</p>
+						<img class="mb-4" src="{{ asset('storage/images/income.png') }}" alt="">
+						<h5 class="text-black">Income</h5>
+						<p class="text-black">NFT flipping and various other investment opportunities</p>
 					</div>
 				</div>
 				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
 					<div class="concept-box">
-						<img class="mb-4" src="{{ asset('storage/images/con-2.svg') }}" alt="">
-						<h5 class="text-white">Fully Scalable</h5>
-						<p class="text-grey">Mobile and efficient low-cost hardware and optimized propietary management.</p>
+						<img class="mb-4" src="{{ asset('storage/images/tickets.png') }}" alt="">
+						<h5 class="text-black">Ticket System</h5>
+						<p class="text-black">Free tickets to high-profile events and festivals across the world</p>
 					</div>
 				</div>
 				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
 					<div class="concept-box">
-						<img class="mb-4" src="{{ asset('storage/images/con-3.svg') }}" alt="">
-						<h5 class="text-white">High Growth</h5>
-						<p class="text-grey">Our reinvestment strategy enables us to quickly grow our fleet of mobile units.</p>
+						<img class="mb-4" src="{{ asset('storage/images/voting.png') }}" alt="">
+						<h5 class="text-black">DAO</h5>
+						<p class="text-black">Voting rights for future perks of your choice</p>
 					</div>
 				</div>
-				<div class="col-md-12 padding-top-bottom" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<div class="line-sep"></div>
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
+					<div class="concept-box">
+						<img class="mb-4" src="{{ asset('storage/images/key.png') }}" alt="">
+						<h5 class="text-black">Owner privileges</h5>
+						<p class="text-black">Early bird access to NFTs and crypto releases</p>
+					</div>
+				</div>
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
+					<div class="concept-box">
+						<img class="mb-4" src="{{ asset('storage/images/event.png') }}" alt="">
+						<h5 class="text-black">High Growth</h5>
+						<p class="text-black">Networking events with other crypto enthusiasts</p>
+					</div>
+				</div>
+				<p class="text-black" style="padding-bottom: 15px">If what you have read excites you as much as it excites us, you are already a FEHU. Put your wealth in motion and embark on our journey to the future! Stay true! Stay Fehu!</p>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="section padding-top-big background-gradient-green" id="utilities">
+		<div class="container">
+			<div class="row" style="font-weight: 400;">
+				<div class="col-md-12">
+					<div class="title-wrap text-center">
+						<div class="back-title">utilities</div>
+						<h3 class="text-black">Utilities</h3>
+					</div>
+				</div>
+				
+				<div class="col-md-12">
+					<p class="text-black">
+						Firstly, besides the perceived value of our NFTs given by the people, each NFT will be a unique access key for the holder. The power of each NFT is based on rarity, thus the rarer the NFT you hold, the higher the power and benefits that come with it. We will be using https://snapshot.org for our voting system as it proved most efficient.
+					</p>
+					<p class="text-black">
+						Overall, all our NFTs have a core purpose, which is granting access to events ranging from entertainment to business/cultural, depending on the community’s desires.
+						Increasingly rarer NFTs will bring holders access to the voting system, where they can pick which events, they would like to attend, or what direction should Fehu D.A.O move towards. Moreover, the higher the rarity of the NFT the more events you can attend on a yearly basis, ranging from small events to big events.
+					</p>
+					<p class="text-black">
+						As for numbers, we are expecting during our first year to organize 1 event monthly, which is planned 1-3 months ahead based on the event size. The ticket claim will work as following based on rarity:
+						<ul>
+							<li class="text-black">3 claims a year for Common</li>
+							<li class="text-black">5 claims a year for Rare</li>
+							<li class="text-black">8 claims a year for Epic</li>
+							<li class="text-black">12 claims a year for Legendary and Mythic</li>
+						</ul>
+						<p class="text-black">
+							These numbers are subject to change based on budget, # of holders and market cap. This is currently just an estimate.
+						</p>
+					</p>
+					<p class="text-black">
+						Early bird access to NFTs and crypto releases:
+					</p>
+					<p class="text-black">
+						High value NFT and FehuToken holders, will have early access to the minting platform for 30 out of 100 NFTs released every month.
+					</p>
 				</div>
 			</div>	
 		</div>
+	</div>
+
+	<div class="section padding-top-big background-gradient-green-re" style="padding-bottom: 20px;" id="rarity">
 		<div class="section background-image-cover" style="background-image: url({{ asset('storage/images/background-blue-1.png') }});">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 align-self-center" data-scroll-reveal="enter left move 50px over 0.6s after 0.3s">
-						<h4 class="text-white">Creating a win-win<br>for everyone</h4>
-						<p class="lead text-grey">An exciting business opportunity should come with equally exciting rewards.</p>
-						<p class="text-grey">Early adopters can earn up to a 200% bonus based on the final token value should we reach our 100 mil tokens hardcap during our planned token sale event.</p>
-						<a class="btn btn-primary btn-gradient mt-4 mx-0 js-tilt" href="#roadmap" data-gal="m_PageScroll2id" data-ps2id-offset="68" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Roadmap</span></a>
+						<h4 class="text-black">Collection Rarity Distribution</h4>
+						<p class="lead text-black">Each collection will be capped at 100 pieces. The rarity distribution will be as follows:</p>
+						<ul>
+							<li class="text-black">48 Commons</li>
+							<li class="text-black">25 Rares</li>
+							<li class="text-black">15 Epics</li>
+							<li class="text-black">8 Legendaries</li>
+							<li class="text-black">4 Mythics</li>
+						</ul>
 					</div>
 					<div class="col-md-5 offset-md-1 order-first order-md-last mb-4 mb-md-0">
 						<div class="img-wrap">
@@ -225,22 +245,33 @@
 						</div>
 					</div>
 					<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter right move 50px over 0.6s after 0.3s">
-						<h4 class="text-white">More than just a price jump</h4>
-						<p class="text-grey">The Coeus token sale events are unique as they offer tiered bonuses which include not only an increasing token price but also lifetime discounts, a commitment from us to support our tokens liquidity and future value, as well as access to future pre-pre-Token sale events.</p>
-						<a class="btn btn-primary btn-gradient mt-4 mx-0 js-tilt" href="#buy" data-gal="m_PageScroll2id" data-ps2id-offset="120" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Buy Tokens</span></a>
+						<h4 class="text-black">What each rarity brings</h4>
+						<p class="text-black">	
+							Each rarity level will bring incrementally better rewards.
+							<ul>
+								<li class="text-black">Common NFTs will benefit from our event system utility</li>
+								<li class="text-black">Rare NFTs will be able to also vote on what events our holders could attend</li>
+								<li class="text-black">Epic NFTs will gives you double the voting power including more potential tickets</li>
+								<li class="text-black">Legendary NFTs will grant you everything mentioned above including voting rights for the future of the Fehu D.A.O and V.I.P tickets to the events.</li>
+								<li class="text-black">Mythical NFT holders will have all the privileges, and decision-making power regarding budgeting (marketing, project development, games, etc.).</li>
+							</ul>
+						</p>
+						<p class="text-black">	
+							Everything will be fully transparent from voting results to the course of action. The information will be readily available to everyone on all our platforms (Discord, Twitter, Telegram).
+						</p>
 					</div>
 				</div>	
 			</div>	
 		</div>	
 	</div>
-
+	
 	<div class="section padding-top-big pb-4 background-gradient-green" id="roadmap">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">roadmap</div>
-						<h3 class="text-white">Making the most<br>out of unused.</h3>
+						<h3 class="text-black">Making the most<br>out of unused.</h3>
 						<p class="color-pr">The Coeus token sale events are unique as they offer tiered bonuses which include increasing token price and lifetime discounts.</p>
 					</div>
 				</div>
@@ -253,57 +284,43 @@
 						<div class="item blue-gradient">						 
 							<div class="roadmap-box background-light-green-1">
 								<p class="mb-4 achieved"><span>Achieved</span></p>
-								<h6 class="text-white">Dec 2017.</h6>
-								<p class="text-grey">Start of Development</p>
+								<h6 class="text-black">Phase 1</h6>
+								<p class="text-black">First collection NFT launched on OpenSea</p>
 							</div>	
 						</div>											
 						<div class="item blue-gradient"> 						 
 							<div class="roadmap-box current-road background-light-green-1 roadmap-shadow">
 								<p class="mb-4"><span>Current</span></p>
-								<h6 class="text-white">Apr 2018.</h6>
-								<p class="text-grey">Token Sale Start</p>
+								<h6 class="text-black">Phase 2</h6>
+								<p class="text-black">When over 50% of first collection NFTs are sold, we will organize our DAO on snapshot.org</p>
 							</div>	
 						</div>												
 						<div class="item blue-gradient"> 						 
 							<div class="roadmap-box next-road background-light-green-1">
 								<p class="mb-4 plan"><span>Plan</span></p>
-								<h6 class="text-white">May 2018.</h6>
-								<p class="text-grey">Blockchain Dev Starts</p>
+								<h6 class="text-black">Phase 3</h6>
+								<p class="text-black">New collection added and mintable on our website using FehuToken.</p>
 							</div>	
 						</div>											
 						<div class="item blue-gradient"> 						 
 							<div class="roadmap-box next-road background-light-green-1">
 								<p class="mb-4 plan"><span>Plan</span></p>
-								<h6 class="text-white">Oct 2018.</h6>
-								<p class="text-grey">Exchange Beta Launch</p>
+								<h6 class="text-black">Phase 4</h6>
+								<p class="text-black">Planning of community events, establishing parternships for musical/sport events</p>
 							</div>	
 						</div>											
 						<div class="item blue-gradient"> 						 
 							<div class="roadmap-box next-road background-light-green-1">
 								<p class="mb-4 plan"><span>Plan</span></p>
-								<h6 class="text-white">Jan 2019.</h6>
-								<p class="text-grey">Expanded Licensing</p>
+								<h6 class="text-black">Phase 5</h6>
+								<p class="text-black">New monthly collections release with characters based on the Celtic Zodiac</p>
 							</div>	
-						</div>											
-						<div class="item blue-gradient"> 						 
-							<div class="roadmap-box next-road background-light-green-1">
-								<p class="mb-4 plan"><span>Plan</span></p>
-								<h6 class="text-white">Mar 2019.</h6>
-								<p class="text-grey">Debit Card Launch</p>
-							</div>	
-						</div>											
-						<div class="item blue-gradient"> 						 
-							<div class="roadmap-box next-road background-light-green-1">
-								<p class="mb-4 plan"><span>Plan</span></p>
-								<h6 class="text-white">May 2019.</h6>
-								<p class="text-grey">Partnership For Future</p>
-							</div>	
-						</div>							
+						</div>																
 					</div>
 				</div>
 				<div class="col-md-12 padding-top">
 					<div class="title-wrap text-center">
-						<h5 class="text-white">How it works:</h5>
+						<h5 class="text-black">How it works:</h5>
 					</div>
 				</div>
 				<div class="col-md-8 offset-md-2" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
@@ -317,587 +334,263 @@
 				</div>
 			</div>	
 		</div>
+	</div>
 	
-	</div>
-
-	<div class="section padding-top-big pb-4 background-gradient-green-re" id="app">
-		<div class="section background-image-cover" style="background-image: url({{ asset('storage/images/background-blue-2.png') }});">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="title-wrap text-center">
-							<div class="back-title">wallet</div>
-							<h3 class="text-white">Control your future<br>wealth.</h3>
-							<p class="color-pr">All-in-one app to secure, manage and exchange blockchain assets.</p>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 align-self-center" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-						<h4 class="text-white">It begins with total security.</h4>
-						<p class="lead text-grey">View, manage and sort all your tokens easily. Providing fast coin management in your local currency.</p>
-						<ul class="app-list mb-5 mt-4">
-							<li class="text-grey">Smart by design</li>
-							<li class="text-grey">Easy Coin Management</li>
-							<li class="text-grey">Instantly import your wallet</li>
-							<li class="text-grey">Detailed transaction info</li>
-							<li class="text-grey">Custom fees and limits</li>
-						</ul>
-						<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>Download App</span></a>
-						<a class="app-btn ml-4" href="#"><i class="fa fa-apple"></i></a>
-						<a class="app-btn ml-2" href="#"><i class="fa fa-android"></i></a>
-						<a class="app-btn ml-2" href="#"><i class="fa fa-windows"></i></a>
-					</div>
-					<div class="col-md-6 order-first order-md-last mb-4 mb-md-0">
-						<div class="img-wrap">
-							<img src="{{ asset('storage/images/app-blue.png') }}" alt="">
-						</div>
-					</div>
-				</div>	
-			</div>	
-		</div>
-	</div>
-
-	<div class="section padding-top-big pb-4 background-gradient-green" id="team">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="title-wrap text-center">
-						<div class="back-title">team</div>
-						<h3 class="text-white">Established since<br>2009 (Belgrade)</h3>
-						<p class="color-pr">We're a close team of creatives, designers & developers who work together.</p>
-					</div>
-				</div>
-			</div>	
-		</div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6 mb-5 mb-lg-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-1">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t5.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Alex Andrews</h6>
-						<p>Officer & Founder</p>
-						<a class="app-btn" href="#"><i class="fa fa-twitter"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-facebook"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-git"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mb-5 mb-lg-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-2">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t6.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Marco Kulis</h6>
-						<p>Development manager</p>
-						<a class="app-btn" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-git"></i></a>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-3">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t7.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Anna Furius</h6>
-						<p>Senior Developer</p>
-						<a class="app-btn" href="#"><i class="fa fa-twitter"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-facebook"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-git"></i></a>
-					</div>
-				</div>
-				<div class="col-md-12 padding-top-small">
-					<div class="title-wrap text-center mb-5">
-						<h5 class="text-white">Advisory team</h5>
-					</div>
-				</div>
-				<div class="col-xl-3 col-md-6 mb-5 mb-xl-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-4">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t1.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Frank Furius</h6>
-						<p>Managing Director</p>
-						<a class="app-btn" href="#"><i class="fa fa-twitter"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-facebook"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-git"></i></a>
-					</div>
-				</div>
-				<div class="col-xl-3 col-md-6 mb-5 mb-xl-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-5">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t2.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Aca Pesic</h6>
-						<p>Founder & CEO</p>
-						<a class="app-btn" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-facebook"></i></a>
-					</div>
-				</div>
-				<div class="col-xl-3 col-md-6 mb-5 mb-xl-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-6">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t3.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Ela Dobric</h6>
-						<p>Executive Director</p>
-						<a class="app-btn" href="#"><i class="fa fa-git"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-facebook"></i></a>
-					</div>
-				</div>
-				<div class="col-xl-3 col-md-6" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.9s">
-					<div class="team-wrap dark">
-						<a class="d-inline" data-toggle="modal" data-target="#team-modal-7">
-							<div class="team-img-wrap rounded dark js-tilt" data-tilt-perspective="700" data-tilt-speed="700" data-tilt-max="24">
-								<img src="{{ asset('storage/images/t4.jpg') }}"" alt="">
-							</div>
-						</a>
-						<h6>Milena Dobric</h6>
-						<p>Founder & CEO</p>
-						<a class="app-btn" href="#"><i class="fa fa-twitter"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn ml-3" href="#"><i class="fa fa-git"></i></a>
-					</div>
-				</div>
-			</div>	
-		</div>
-	</div>
-
-	<!-- Modal Team 1-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-1" tabindex="-1" role="dialog" aria-labelledby="team-modal-1" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t5-modal.jpg') }}))></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Alex Andrews</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Modal Team 2-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-2" tabindex="-1" role="dialog" aria-labelledby="team-modal-2" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t6-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Marco Kulis</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<!-- Modal Team 3-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-3" tabindex="-1" role="dialog" aria-labelledby="team-modal-3" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t7-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Anna Furius</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<!-- Modal Team 4-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-4" tabindex="-1" role="dialog" aria-labelledby="team-modal-4" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t1-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Frank Furius</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<!-- Modal Team 5-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-5" tabindex="-1" role="dialog" aria-labelledby="team-modal-5" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t2-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Aca Pesic</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<!-- Modal Team 6-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-6" tabindex="-1" role="dialog" aria-labelledby="team-modal-6" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t3-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Ela Dobric</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
-
-	<!-- Modal Team 7-->
-
-	<div class="modal fade bd-example-modal-lg" id="team-modal-7" tabindex="-1" role="dialog" aria-labelledby="team-modal-7" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-img-wrap" style="background-image: url({{ asset('storage/images/t4-modal.jpg') }})"></div>
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true"></span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-								<h3 class="mb-0">Milena Dobric</h3>
-								<p class="lead">Officer & Founder</p>
-							</div>
-							<div class="col-xl-12">
-								<p class="mb-3">Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.</p>
-								<ul class="app-list mt-4">
-									<li>Lead marketing</li>
-									<li>Run logistics strategy</li>
-									<li>Advised software</li>
-								</ul>
-								<p class="mt-4 mb-0"><small>html</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>css</small></p>
-								<div class="progress mt-1 mb-2">
-									<div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="mb-0"><small>php</small></p>
-								<div class="progress mt-1 mb-4">
-									<div class="progress-bar" style="width: 93%" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>		
-	
-
 	<div class="section padding-top-big pb-4  background-gradient-green-re" id="faq">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">faq</div>
-						<h3 class="text-white">Questions and Answers</h3>
+						<h3 class="text-black">Questions and Answers</h3>
 						<p class="color-pr">Listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic.</p>
 					</div>
 				</div>
 			</div>	
 		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
 					<div id="accordion" class="accordion-style">
 						<div class="card">
 							<div class="card-header" id="headingOne">
-								<a class="text-white background-light-green-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									What exactly is your token?
+								<a class="text-black background-light-green-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									How many NFT'S are ready for mint? 
 								</a>
 							</div>
 
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 								<div class="card-body">
-									<h6 class="text-white">What exactly is your token?</h6>
-									<p class="text-grey">Token is a community of people who want to mine cryptocurrency profitably by combining resources to achieve savings on equipment and ultra-low-cost electricity.</p>
+									<h6 class="text-black">How many NFT'S are ready for mint? </h6>
+									<p class="text-black">You can mint a collection for a limited period of time, there will be 100 NFT ready to mint for our second collection.</p>
 								</div>
 							</div>
 						</div>
 						
 						<div class="card">
 							<div class="card-header" id="headingTwo">
-								<a class="collapsed text-white background-light-green-1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									What’s your overall strategy?
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									How to get access to the pre-sale?
 								</a>
 							</div>
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 								<div class="card-body">
-									<h6 class="text-white">What’s your overall strategy?</h6>
-									<p class="text-grey">Our strategy is very straightforward: 1) raise funds, 2) leverage those funds to procure the best mining equipment and other necessities at the lowest possible prices, 3) set up the hardware in a suitable facility; 4) start mining; 5) distribute what we mine.</p>
+									<h6 class="text-black">How to get access to the pre-sale?</h6>
+									<p class="text-black"> You can only mint our the NFTs with our FEHU tokens. After the mint is done you can only get the NFTs you want on any marketplace which you can find them.</p>
 								</div>
 							</div>
 						</div>
 						
 						<div class="card">
 							<div class="card-header" id="headingThree">
-								<a class="collapsed text-white background-light-green-1" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									What is bitcoin?
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									What's the story behind the Fehu NFT characters?
 								</a>
 							</div>
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="card-body">
-									<h6 class="text-white">What is bitcoin?</h6>
-									<p class="text-grey">Bitcoin is a cryptocurrency and worldwide payment system. It is the first decentralised digital currency, as the system works without a central bank or single administrator.</p>
+									<h6 class="text-black">What's the story behind the Fehu NFT characters?</h6>
+									<p class="text-black">All our creatures are based on celtic mythology, each month come with a new “Guardian Animal” from celtic zodiac. The characters represent human traits.</p>
 								</div>
 							</div>
 						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingFour">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									What is so special about this NFT collection?
+								</a>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black">	What is so special about this NFT collection?</h6>
+									<p class="text-black">Each NFT will have a specific characteristic and meaning and provide metadata with on-chain storage of media.
+										Fehu NFT are all about utility and access, meaning that each NFT will have different levels of access and activities through the smart contract attached with each investment thus giving them “utility” through metadata. 
+									  This NFT is like a key for any kind of event that you wish to have.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingFive">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Will the NFTs be sold on open marketplaces?
+								</a>
+							</div>
+							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black">Will the NFTs be sold on open marketplaces?</h6>
+									<p class="text-black">Primary sales of Fehu NFTs will be on FehuNFT.com from minting.
+										FEHU collection will appear on secondary marketplaces like OpenSea, Rarible and Looksrare for resale purchase. FEHU NFTs will adhere to the ERC-721 standard.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingSix">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									Where can I interact with other Fehu NFT collectors?
+								</a>
+							</div>
+							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black">Where can I interact with other Fehu NFT collectors?</h6>
+									<p class="text-black">We’re always hanging out on our Fehu NFT discord channel and fehu token telegram :)
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingSeven">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+									What blockchain are these NFTs minted on?
+								</a>
+							</div>
+							<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black"> What blockchain are these NFTs minted on?</h6>
+									<p class="text-black">NFTs are minted on ERC-721 compliant contracts deployed to the Ethereum blockchain. This is the "gold standard" and most widely-supported format for digital collectibles.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingEight">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+									Can you rent out your Fehu NFT?
+								</a>
+							</div>
+							<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black">Can you rent out your Fehu NFT?</h6>
+									<p class="text-black">In order to redeem a benefit we must be able to verify on the chain that you own the NFT at the time the benefit is being deployed or activated. Afterwards you can.
+									</p>
+								</div>
+							</div>
+						</div>
+
 					</div>				
 				</div>
 				<div class="col-md-6 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
 					<div id="accordion-snd" class="accordion-style">
 						<div class="card">
-							<div class="card-header" id="headingFour">
-								<a class="text-white background-light-green-1" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-									What is blockchain?
+							<div class="card-header" id="headingNine">
+								<a class="text-black background-light-green-1" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+									How do I purchase a Fehu NFT?
 								</a>
 							</div>
 
-							<div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion-snd">
+							<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6 class="text-white">What is blockchain?</h6>
-									<p class="text-grey">A blockchain is the technology on which cryptocurrency is based. A blockchain is basically a continuously growing list of records called blocks that are linked and secured using cryptography. </p>
+									<h6 class="text-black">How do I purchase a Fehu NFT?</h6>
+									<p class="text-black">In order to purchase a Fehu NFT, you will need to conduct two important steps. First, you will need to purchase ETH from a crypto-currency exchange such as Coinbase, Gemini, or Binance. Once you have completed that step, you will need to transfer your ETH into a non-custodial digital wallet like MetaMask, Portis or WalletConnect compatible wallets.
+										For Mint, you have to own FEHU token (feutoken.com) and for resale purposes you can use either FEHU coin or Fehu. These wallets connect to the FehuNFT website and allow you to mint an NFT.  For your reference, there will be a link to show  in detail how to set up a crypto wallet, as well as the basic steps to take to send ETH to your wallet. </p>
 								</div>
 							</div>
 						</div>
 						
 						<div class="card">
-							<div class="card-header" id="headingFive">
-								<a class="collapsed text-white background-light-green-1" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-									What is cryptocurrency?
+							<div class="card-header" id="headingTen">
+								<a class="text-black background-light-green-1" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+									Can I resell my Fehu NFT?
 								</a>
 							</div>
-							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-snd">
+							<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6 class="text-white">What is cryptocurrency?</h6>
-									<p class="text-grey">A cryptocurrency is a digital asset designed to work as a medium of exchange that uses cryptography to secure its transactions, to control the creation of additional units, and to verify the transfer of assets.</p>
+									<h6 class="text-black">Can I resell my Fehu NFT?</h6>
+									<p class="text-black">Yes. Fehu Nfts can be resold on NFT marketplaces such as OpenSea and Rarible etc. If a Fehu NFT is resold there will be a 5% royalty fee to Fehu NFT DAO, MONEY WILL BE 100% transparent and would be spent on your wish inside the fehu family.</p>
 								</div>
 							</div>
 						</div>
 						
 						<div class="card">
-							<div class="card-header" id="headingSix">
-								<a class="collapsed text-white background-light-green-1" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-									How much should I invest?
+							<div class="card-header" id="headingEleven">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+									Will the NFTs be sold on open marketplaces?
 								</a>
 							</div>
-							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-snd">
+							<div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6 class="text-white">How much should I invest?</h6>
-									<p class="text-grey">Cryptocurrency mining is not without risk, and we are open and candid about those risks in our White Paper.</p>
+									<h6 class="text-black">Will the NFTs be sold on open marketplaces?</h6>
+									<p class="text-black">Primary sales of Fehu NFTs will be on FehuNFT.com from minting.
+										FEHU collection will appear on secondary marketplaces like OpenSea, Rarible and Looksrare for resale purchase. FEHU NFTs will adhere to the ERC-721 standard.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingTwelve">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+									What traits does Fehu NFT have?
+								</a>
+							</div>
+							<div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion-snd">
+								<div class="card-body">
+									<h6 class="text-black">What traits does Fehu NFT have?</h6>
+									<p class="text-black">Primary sales of Fehu NFTs will be on FehuNFT.com from minting.
+										The Fehu Collection has more than 6 different traits and hundreds of possible combinations. The collection is designed by hand and digitized by our artists.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingThirteen">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+									How many Fehu NFT can mint per wallet?
+								</a>
+							</div>
+							<div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion-snd">
+								<div class="card-body">
+									<h6 class="text-black"> How many Fehu NFT can mint per wallet?</h6>
+									<p class="text-black">There is no limit per wallet. If you are quick enough, you can snatch as many as you can. However, there will be only 1 Fehu NFT available for one transaction.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingFourteen">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+									Can I purchase Fehu NFTs with my credit card?
+								</a>
+							</div>
+							<div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion-snd">
+								<div class="card-body">
+									<h6 class="text-black">Can I purchase Fehu NFTs with my credit card?</h6>
+									<p class="text-black">At the moment is not possible, in order to purchase a Fehu NFT you will need to have a digital wallet with Fehu token or ETH currency. But we plan in the near future.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingFifteen">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+									How do I download and install MetaMask?
+								</a>
+							</div>
+							<div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion-snd">
+								<div class="card-body">
+									<h6 class="text-black">  How do I download and install MetaMask?</h6>
+									<p class="text-black">Go on the <a href="https://metamask.io/download/">metamask</a> official website and download Metamask plugin.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingSixteen">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+									How Many Rewards Does a Token Have?
+								</a>
+							</div>
+							<div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion-snd">
+								<div class="card-body">
+									<h6 class="text-black">How Many Rewards Does a Token Have?</h6>
+									<p class="text-black">You can verify the amount of redemptions a token has by visiting the specific token’s page on fehu.nft and viewing the redemption count as marked by our redemption key symbol. Fehu NFT redemption counts are also viewable on OpenSea under a token’s properties. We will have a database with all the actions within the project.
+									</p>
 								</div>
 							</div>
 						</div>
@@ -907,119 +600,25 @@
 		</div>
 	</div>
 	
-	
-	<div class="section background-gradient-green" id="contact">
-		<div class="section padding-top-bottom-big background-image-cover" style="background-image: url({{ asset('storage/images/background-3.png') }});">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="title-wrap text-center">
-							<div class="back-title">contact</div>
-							<h3 class="text-white">Always ready to work</h3>
-							<p class="color-pr">Get in touch.</p>
-						</div>
-					</div>
-				</div>	
-			</div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-3" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-						<div class="contact-det text-center">
-							<img src="{{ asset('storage/images/contact-1.svg') }}" alt="">
-							<h6 class="text-white">Phone</h6>
-							<p class="text-grey">+54 12 346 7826</p>
-						</div>
-					</div>
-					<div class="col-md-3 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
-						<div class="contact-det text-center">
-							<img src="{{ asset('storage/images/contact-2.svg') }}" alt="">
-							<h6 class="text-white">Email</h6>
-							<p class="text-grey">office@coeus.ico</p>
-						</div>
-					</div>
-					<div class="col-md-3 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
-						<div class="contact-det text-center">
-							<img src="{{ asset('storage/images/contact-3.svg') }}" alt="">
-							<h6 class="text-white">Address</h6>
-							<p class="text-grey">1093 Flushing Ave, NY</p>
-						</div>
-					</div>
-				</div>
-				<form id="contact-form" class="mt-5" method="post" action="contact.php" role="form" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
-					<div class="row justify-content-center">
-						<div class="col-md-8">
-							<div class="messages text-center"></div>
-						</div>
-					</div>
-					<div class="controls form-on-blue">
-						<div class="row justify-content-center">
-							<div class="col-md-4">
-								<div class="form-group text-center">
-									<input id="form_name" type="text" name="name" class="form-control text-center" placeholder="Enter your first name *" required="required" data-error="First name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-4 mt-3 mt-md-0">
-								<div class="form-group text-center">
-									<input id="form_lastname" type="text" name="surname" class="form-control text-center" placeholder="Enter your last name *" required="required" data-error="Last name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-md-4 mt-3">
-								<div class="form-group text-center">
-									<input id="form_email" type="email" name="email" class="form-control text-center" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-4 mt-3">
-								<div class="form-group text-center">
-									<input id="form_phone" type="tel" name="phone" class="form-control text-center" placeholder="Enter your phone">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-md-8 mt-3">
-								<div class="form-group text-center">
-									<textarea id="form_message" name="message" class="form-control text-center" placeholder="Your message *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-									<div class="help-block with-errors textarea-error"></div>
-								</div>
-							</div>
-							<div class="col-md-8 mt-3 text-center">
-								<input type="submit" class="btn btn-primary btn-send text-center" value="Send message">
-							</div>
-						</div>
-					</div>
-				</form>	
-			</div>
-		</div>
-	</div>
-	
 	<div class="section background-light-green-1">
-		<div class="section padding-top-big background-image-cover" style="background-image: url({{ asset('storage/images/background-footer-blue.png') }});">
+		<div class="section padding-top-big background-image-cover" style="background-image: url({{ asset('storage/images/background-footer.png') }});">
 			<div class="container padding-bottom-big">
 				<div class="row justify-content-between">
 					<div class="col-lg-4">
-						<h6 class="text-white mb-4">Stay tunned:</h6>
-						<div class="suscribe form-on-blue">
-							<input class="form-control text-left" placeholder="Enter your email" type="text" name="name" />
-							<button type="submit" class="btn btn-primary btn-gradient m-0 js-tilt" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>subscribe</span></button>
-						</div>
-						<p class="text-left text-white mb-0"><small>* we promise that we won´t spam you, never.</small></p>
+						<h6 class="text-black mb-4">Disclaimer</h6>
+						<p class="text-left text-black mb-0"><small>* all crypto investments are risky. We don't guarantee profit.</small></p>
 					</div>
 					<div class="col-lg-5 mt-4">
 						<ul class="footer-list">
-							<li class="text-left"><a class="text-white" href="#">concept</a></li>
-							<li class="text-left"><a class="text-white" href="#">roadmap</a></li>
-							<li class="text-left"><a class="text-white" href="#">buy tokens</a></li>
-							<li class="text-left"><a class="text-white" href="#">team</a></li>
-							<li class="text-left"><a class="text-white" href="#">FAQ</a></li>
-							<li class="text-left"><a class="text-white" href="#">download app</a></li>
-							<li class="text-left"><a class="text-white" href="#">contact</a></li>
-							<li class="text-left"><a class="text-white" href="#">news</a></li>
-							<li class="text-left"><a class="text-white" href="#">overall output</a></li>
+							<li class="text-left"><a class="text-black" href="#">concept</a></li>
+							<li class="text-left"><a class="text-black" href="#">roadmap</a></li>
+							<li class="text-left"><a class="text-black" href="#">buy tokens</a></li>
+							<li class="text-left"><a class="text-black" href="#">team</a></li>
+							<li class="text-left"><a class="text-black" href="#">FAQ</a></li>
+							<li class="text-left"><a class="text-black" href="#">download app</a></li>
+							<li class="text-left"><a class="text-black" href="#">contact</a></li>
+							<li class="text-left"><a class="text-black" href="#">news</a></li>
+							<li class="text-left"><a class="text-black" href="#">overall output</a></li>
 						</ul>
 					</div>
 				</div>
@@ -1029,7 +628,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 footer text-center text-lg-left">
-						<p>Copyright © 2018, Coeus. Template made by <a href="https://themeforest.net/user/ig_design/portfolio?ref=IG_design">IG Design</a></p>
+						<p>FehuTeam© 2022</p>
 					</div>
 					<div class="col-lg-6 footer mt-4 mr-auto mt-lg-0 mr-lg-0 text-center text-lg-right">
 						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-twitter"></i></a>

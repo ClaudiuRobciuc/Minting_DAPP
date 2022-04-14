@@ -191,7 +191,7 @@ mark{
 	background-color: rgba(245, 231, 252, 0.9);
 }
 .background-gradient-dark{
-	background: linear-gradient(#0e0529, #1e0b56);
+	background: linear-gradient(#c0bbe55c, #84a5a7ad);
 }
 .background-gradient-dark-re{
 	background: linear-gradient(#1e0b56, #0e0529);
@@ -209,10 +209,10 @@ mark{
 	background-color: #4d82ff;
 }
 .background-gradient-green{
-	background: linear-gradient(#2CBFC7, #46EEAA);
+	background: linear-gradient(#2CBFC7, #67edbc);
 }
 .background-gradient-green-re{
-	background: linear-gradient(#46EEAA, #2CBFC7);
+	background: linear-gradient(#59f5ee, #54adcf);
 }
 .background-light-green-1 {
 	background-color: #2CBFC7;
@@ -319,6 +319,9 @@ mark{
 /* #Navigation
 ================================================== */
 
+.text-black{
+	color: #000 !important;
+}
 #menu-wrap{
     position: fixed;
 	width:100%;
@@ -355,7 +358,7 @@ mark{
 	transition : all 0.3s ease-out;
 }
 .menu-back.cbp-af-header-shrink.dark{
-	background-color: rgba(171, 171, 171, 0.77);
+	background-color: rgb(113 190 193 / 98%);
 }
 .cbp-af-header.cbp-af-header-shrink .navbar {
 	padding: 0;
@@ -393,7 +396,7 @@ mark{
 }
 .menu-back.dark .nav-link, 
 .menu-back.dark .nav-link:focus {
-	color: #fff !important;
+	color: #424242 !important;
 }
 .menu-back.dark .nav-link.no-line:hover,
 .nav-link.no-line:hover{
@@ -774,6 +777,16 @@ mark{
 	overflow: hidden;
 }
 
+.gradient-text {
+    background-color: #e559f1;
+    background-image: linear-gradient(45deg, #771f93, #65a8b1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 800;
+}
 
 .ocean {
 	height: 5%;
@@ -1950,7 +1963,7 @@ input.btn.btn-primary{
 		padding-bottom: 5px;
 	}
 	.menu-back.dark{
-		background-color: rgba(171, 171, 171, 0.77);
+		background-color: rgba(113, 190, 193, 0.98);
 	}
 	.cbp-af-header.cbp-af-header-shrink {
 		background-color: rgba(250,250,250,1);
@@ -1958,7 +1971,7 @@ input.btn.btn-primary{
 		padding-bottom: 5px;
 	}
 	.menu-back.cbp-af-header-shrink.dark{
-		background-color: rgba(171, 171, 171, 0.77);
+		background-color: rgb(131 197 192 / 94%);;
 	}
 	.navbar-nav{
 		padding: 35px 0 !important;
