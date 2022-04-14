@@ -7,19 +7,19 @@
 				<animateTransform attributeType="xml"
 				attributeName="transform" type="translate"
 				values="0 0; 0 20; 0 0"
-				begin="0" dur="0.6s" repeatCount="indefinite" />
+				begin="0" dur="0.3s" repeatCount="indefinite" />
 			</rect>
 			<rect x="10" y="0" width="4" height="10" fill="#333">
 				<animateTransform attributeType="xml"
 				attributeName="transform" type="translate"
 				values="0 0; 0 20; 0 0"
-				begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+				begin="0.2s" dur="0.3s" repeatCount="indefinite" />
 			</rect>
 			<rect x="20" y="0" width="4" height="10" fill="#333">
 				<animateTransform attributeType="xml"
 				attributeName="transform" type="translate"
 				values="0 0; 0 20; 0 0"
-				begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+				begin="0.3s" dur="0.3s" repeatCount="indefinite" />
 			</rect>
 		</svg>	
 	</div>
@@ -94,7 +94,7 @@
 								The opportunity to make the future of decentralization a reality is yours. 
 								It all starts with our NFT collection, which will embark you on a mythical journey through art, while giving you the freedom to choose what you want for the future of the D.A.O.
 							</p>
-							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Fehu Token</span></a>
+							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="https://fehutoken.com" target="_blank" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-ps2id-offset="68" ><span>Fehu Token</span></a>
 							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Buy on OpenSea</span></a>
 						</div>
 					</div>
@@ -110,17 +110,25 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">about</div>
-						<h3 class="text-black">Our collection</h3>
+						<h3 class="text-black">Our Collection</h3>
 					</div>
 				</div>
-				
 				<div class="col-md-12">
+					<h3 class="text-black">Story</h3>
+					<p class="text-black">
+						Once upon a time, the Earth was populated by shapeshifters and mythical creatures coexisting with the humankind, all under the rule of the mighty Dagda, the leader of all gods. 
+						In these magical chapters of history, the most exquisite nuances of existence were splattered by the Animal Guardians, every single one of which embodied the darkest, as well as the brightest corners of the human behavior. 
+						Each animal marked a specific timeframe within the planetary movements, and would protect those born in it, guiding and shaping their life paths.
+					</p>
+				</div>
+				<div class="col-md-12">
+					<h3 class="text-black">Our Vision</h3>
 					<p class="text-black">
 						Our new NFT project on the Ethereum Blockchain, is challenging the current status quo and releases a collection where the assets are mintable with our own crypto token (FEHU), and feature utility from the get-go.
 					</br></br>
-					With a robust long-term vision revolving around empowering the community to build their own D.A.O and support their financial success, there are plenty of things to look forward to in 2022.
+						With a robust long-term vision revolving around empowering the community to build their own D.A.O and support their financial success, there are plenty of things to look forward to in 2022.
 					</br></br>
-					The Fehu D.A.O debuts with a mintable NFT collection capitalizing on the community’s yearning for utility. Their main purpose is to prove once and for all that NFTs are not just avatars, but the future of decentralization. 
+						The Fehu D.A.O debuts with a mintable NFT collection capitalizing on the community’s yearning for utility. Their main purpose is to prove once and for all that NFTs are not just avatars, but the future of decentralization. 
 					</p>
 					<p class="text-black">
 						Besides constant new releases and a story that takes shape before your eyes, everything you own comes with decision-making power. You get to build the Web 3.0 universe and a business alongside us, while enjoying infinite perks:
@@ -128,42 +136,42 @@
 				</div>
 			</div>	
 			<div class="row" style="padding-top:2rem">
-				<div class="col-md-4" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
+				<div class="col-md-4" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/income.png') }}" alt="">
 						<h5 class="text-black">Income</h5>
 						<p class="text-black">NFT flipping and various other investment opportunities</p>
 					</div>
 				</div>
-				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/tickets.png') }}" alt="">
 						<h5 class="text-black">Ticket System</h5>
 						<p class="text-black">Free tickets to high-profile events and festivals across the world</p>
 					</div>
 				</div>
-				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/voting.png') }}" alt="">
 						<h5 class="text-black">DAO</h5>
 						<p class="text-black">Voting rights for future perks of your choice</p>
 					</div>
 				</div>
-				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/key.png') }}" alt="">
 						<h5 class="text-black">Owner privileges</h5>
 						<p class="text-black">Early bird access to NFTs and crypto releases</p>
 					</div>
 				</div>
-				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.7s">
+				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/event.png') }}" alt="">
 						<h5 class="text-black">High Growth</h5>
 						<p class="text-black">Networking events with other crypto enthusiasts</p>
 					</div>
 				</div>
-				<p class="text-black" style="padding-bottom: 15px">If what you have read excites you as much as it excites us, you are already a FEHU. Put your wealth in motion and embark on our journey to the future! Stay true! Stay Fehu!</p>
+				<p class="text-black" style="padding-bottom: 15px" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">If what you have read excites you as much as it excites us, you are already a FEHU. Put your wealth in motion and embark on our journey to the future! Stay true! Stay Fehu!</p>
 				
 			</div>
 		</div>
@@ -195,14 +203,14 @@
 							<li class="text-black">8 claims a year for Epic</li>
 							<li class="text-black">12 claims a year for Legendary and Mythic</li>
 						</ul>
-						<p class="text-black">
+						<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 							These numbers are subject to change based on budget, # of holders and market cap. This is currently just an estimate.
 						</p>
 					</p>
-					<p class="text-black">
+					<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 						Early bird access to NFTs and crypto releases:
 					</p>
-					<p class="text-black">
+					<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 						High value NFT and FehuToken holders, will have early access to the minting platform for 30 out of 100 NFTs released every month.
 					</p>
 				</div>
@@ -214,7 +222,7 @@
 		<div class="section background-image-cover" style="background-image: url({{ asset('storage/images/background-blue-1.png') }});">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 align-self-center" data-scroll-reveal="enter left move 50px over 0.6s after 0.3s">
+					<div class="col-md-6 align-self-center" data-scroll-reveal="enter left move 50px over 0.3s after 0.1s">
 						<h4 class="text-black">Collection Rarity Distribution</h4>
 						<p class="lead text-black">Each collection will be capped at 100 pieces. The rarity distribution will be as follows:</p>
 						<ul>
@@ -227,7 +235,7 @@
 					</div>
 					<div class="col-md-5 offset-md-1 order-first order-md-last mb-4 mb-md-0">
 						<div class="img-wrap">
-							<img src="{{ asset('storage/images/1.svg') }}" alt="">
+							<img src="{{ asset('storage/images/rarity1.png') }}" alt="">
 						</div>
 					</div>
 				</div>	
@@ -241,10 +249,10 @@
 				<div class="row">
 					<div class="col-md-5 mb-4 mb-md-0">
 						<div class="img-wrap">
-							<img src="{{ asset('storage/images/2.svg') }}" alt="">
+							<img src="{{ asset('storage/images/rarity2.png') }}" alt="">
 						</div>
 					</div>
-					<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter right move 50px over 0.6s after 0.3s">
+					<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter right move 50px over 0.3s after 0.1s">
 						<h4 class="text-black">What each rarity brings</h4>
 						<p class="text-black">	
 							Each rarity level will bring incrementally better rewards.
@@ -256,7 +264,7 @@
 								<li class="text-black">Mythical NFT holders will have all the privileges, and decision-making power regarding budgeting (marketing, project development, games, etc.).</li>
 							</ul>
 						</p>
-						<p class="text-black">	
+						<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">	
 							Everything will be fully transparent from voting results to the course of action. The information will be readily available to everyone on all our platforms (Discord, Twitter, Telegram).
 						</p>
 					</div>
@@ -271,7 +279,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">roadmap</div>
-						<h3 class="text-black">Making the most<br>out of unused.</h3>
+						<h3 class="text-black">Our plan</h3>
 					</div>
 				</div>
 				<div class="col-md-12">
@@ -322,7 +330,7 @@
 						<h5 class="text-black">How it works:</h5>
 					</div>
 				</div>
-				<div class="col-md-8 offset-md-2" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
+				<div class="col-md-8 offset-md-2" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
 					<div class="video-section video-shadow">
 						<figure class="vimeo"> 
 							<a href="https://player.vimeo.com/video/239566739">
@@ -342,7 +350,6 @@
 					<div class="title-wrap text-center">
 						<div class="back-title">faq</div>
 						<h3 class="text-black">Questions and Answers</h3>
-						<p class="color-pr">Listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic.</p>
 					</div>
 				</div>
 			</div>	
@@ -350,7 +357,7 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.3s">
+				<div class="col-md-6" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
 					<div id="accordion" class="accordion-style">
 						<div class="card">
 							<div class="card-header" id="headingOne">
@@ -469,7 +476,7 @@
 						</div>
 					</div>				
 				</div>
-				<div class="col-md-6 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
+				<div class="col-md-6 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 					<div id="accordion-snd" class="accordion-style">
 						<div class="card">
 							<div class="card-header" id="headingNine">
@@ -590,15 +597,12 @@
 					</div>
 					<div class="col-lg-5 mt-4">
 						<ul class="footer-list">
-							<li class="text-left"><a class="text-black" href="#">concept</a></li>
-							<li class="text-left"><a class="text-black" href="#">roadmap</a></li>
+							<li class="text-left"><a class="text-black" data-gal='m_PageScroll2id' href="#about">about</a></li>
+							<li class="text-left"><a class="text-black" data-gal='m_PageScroll2id' href="#utilities">utilities</a></li>
 							<li class="text-left"><a class="text-black" href="#">buy tokens</a></li>
-							<li class="text-left"><a class="text-black" href="#">team</a></li>
-							<li class="text-left"><a class="text-black" href="#">FAQ</a></li>
-							<li class="text-left"><a class="text-black" href="#">download app</a></li>
-							<li class="text-left"><a class="text-black" href="#">contact</a></li>
-							<li class="text-left"><a class="text-black" href="#">news</a></li>
-							<li class="text-left"><a class="text-black" href="#">overall output</a></li>
+							<li class="text-left"><a class="text-black" data-gal='m_PageScroll2id' href="#faq">FAQ</a></li>
+							<li class="text-left"><a class="text-black" data-gal='m_PageScroll2id' href="#rarity">rarity</a></li>
+							<li class="text-left"><a class="text-black" data-gal='m_PageScroll2id' href="#roadmap">roadmap</a></li>
 						</ul>
 					</div>
 				</div>
