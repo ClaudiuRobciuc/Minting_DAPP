@@ -110,7 +110,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">about</div>
-						<h3 class="text-black">Our Collection</h3>
+						<h3 class="text-black">Our</h3>
 					</div>
 				</div>
 				<div class="col-md-12">
