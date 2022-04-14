@@ -272,7 +272,6 @@
 					<div class="title-wrap text-center">
 						<div class="back-title">roadmap</div>
 						<h3 class="text-black">Making the most<br>out of unused.</h3>
-						<p class="color-pr">The Coeus token sale events are unique as they offer tiered bonuses which include increasing token price and lifetime discounts.</p>
 					</div>
 				</div>
 				<div class="col-md-12">
@@ -356,14 +355,14 @@
 						<div class="card">
 							<div class="card-header" id="headingOne">
 								<a class="text-black background-light-green-1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-									How many NFT'S are ready for mint? 
+									How many NFTs are mintable?
 								</a>
 							</div>
 
 							<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 								<div class="card-body">
-									<h6 class="text-black">How many NFT'S are ready for mint? </h6>
-									<p class="text-black">You can mint a collection for a limited period of time, there will be 100 NFT ready to mint for our second collection.</p>
+									<h6 class="text-black">How many NFTs are mintable?</h6>
+									<p class="text-black">You can mint a Fehu NFT for a limited time before the next collection is being released. There will be a new collection comprising of 100 unique pieces every month.</p>
 								</div>
 							</div>
 						</div>
@@ -377,7 +376,7 @@
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black">How to get access to the pre-sale?</h6>
-									<p class="text-black"> You can only mint our the NFTs with our FEHU tokens. After the mint is done you can only get the NFTs you want on any marketplace which you can find them.</p>
+									<p class="text-black">You can do that by owning Fehu tokens which will enable you to mint upon every collection release.</p>
 								</div>
 							</div>
 						</div>
@@ -391,7 +390,7 @@
 							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black">What's the story behind the Fehu NFT characters?</h6>
-									<p class="text-black">All our creatures are based on celtic mythology, each month come with a new “Guardian Animal” from celtic zodiac. The characters represent human traits.</p>
+									<p class="text-black">All our characters are inspired from the Celtic mythology and are representative of human traits. Each month bringing a new “Guardian Animal” from the Gaelic Zodiac.</p>
 								</div>
 							</div>
 						</div>
@@ -405,24 +404,7 @@
 							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black">	What is so special about this NFT collection?</h6>
-									<p class="text-black">Each NFT will have a specific characteristic and meaning and provide metadata with on-chain storage of media.
-										Fehu NFT are all about utility and access, meaning that each NFT will have different levels of access and activities through the smart contract attached with each investment thus giving them “utility” through metadata. 
-									  This NFT is like a key for any kind of event that you wish to have.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" id="headingFive">
-								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-									Will the NFTs be sold on open marketplaces?
-								</a>
-							</div>
-							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-								<div class="card-body">
-									<h6 class="text-black">Will the NFTs be sold on open marketplaces?</h6>
-									<p class="text-black">Primary sales of Fehu NFTs will be on FehuNFT.com from minting.
-										FEHU collection will appear on secondary marketplaces like OpenSea, Rarible and Looksrare for resale purchase. FEHU NFTs will adhere to the ERC-721 standard.</p>
+									<p class="text-black">Each NFT will have unique traits and meaning while providing metadata with on-chain storage of media. Fehu NFTs are all about utility, each NFT bringing different levels of decision power within the Fehu DAO and access to activities through the proof of ownership associated with smart contracts. They will act as a key for you to attend worldwide events and tailor the journey of our organization.</p>
 								</div>
 							</div>
 						</div>
@@ -451,7 +433,7 @@
 							<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black"> What blockchain are these NFTs minted on?</h6>
-									<p class="text-black">NFTs are minted on ERC-721 compliant contracts deployed to the Ethereum blockchain. This is the "gold standard" and most widely-supported format for digital collectibles.</p>
+									<p class="text-black">NFTs are minted on ERC-721 compliant contracts deployed on the Ethereum blockchain. This is the "gold standard" and most used format for digital collectibles.</p>
 								</div>
 							</div>
 						</div>
@@ -465,12 +447,26 @@
 							<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black">Can you rent out your Fehu NFT?</h6>
-									<p class="text-black">In order to redeem a benefit we must be able to verify on the chain that you own the NFT at the time the benefit is being deployed or activated. Afterwards you can.
+									<p class="text-black">To redeem its benefits, we must first be able to verify ownership on the blockchain when the claim is made. Once everything is confirmed and the benefits rolling, it can be rented.
 									</p>
 								</div>
 							</div>
 						</div>
 
+						<div class="card">
+							<div class="card-header" id="headingTwelve">
+								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+									What traits does Fehu NFT have?
+								</a>
+							</div>
+							<div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+								<div class="card-body">
+									<h6 class="text-black">What traits does Fehu NFT have?</h6>
+									<p class="text-black">The Fehu Collection has over 6 unique traits and hundreds of possible combinations. The collection is designed by hand and digitized by our artists.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>				
 				</div>
 				<div class="col-md-6 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.5s">
@@ -485,8 +481,7 @@
 							<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion-snd">
 								<div class="card-body">
 									<h6 class="text-black">How do I purchase a Fehu NFT?</h6>
-									<p class="text-black">In order to purchase a Fehu NFT, you will need to conduct two important steps. First, you will need to purchase ETH from a crypto-currency exchange such as Coinbase, Gemini, or Binance. Once you have completed that step, you will need to transfer your ETH into a non-custodial digital wallet like MetaMask, Portis or WalletConnect compatible wallets.
-										For Mint, you have to own FEHU token (feutoken.com) and for resale purposes you can use either FEHU coin or Fehu. These wallets connect to the FehuNFT website and allow you to mint an NFT.  For your reference, there will be a link to show  in detail how to set up a crypto wallet, as well as the basic steps to take to send ETH to your wallet. </p>
+									<p class="text-black">To purchase a Fehu NFT from a secondary market, you will first need to own enough ETH on a crypto wallet like MetaMask, Portis or WalletConnect to cover the collectible’s price and the afferent gas fee. Once that is covered, you will browse the collectibles uploaded for sale on the marketplace (OpenSea), connect your wallet to it and proceed purchasing. </p>
 								</div>
 							</div>
 						</div>
@@ -500,7 +495,7 @@
 							<div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion-snd">
 								<div class="card-body">
 									<h6 class="text-black">Can I resell my Fehu NFT?</h6>
-									<p class="text-black">Yes. Fehu Nfts can be resold on NFT marketplaces such as OpenSea and Rarible etc. If a Fehu NFT is resold there will be a 5% royalty fee to Fehu NFT DAO, MONEY WILL BE 100% transparent and would be spent on your wish inside the fehu family.</p>
+									<p class="text-black">Yes! Fehu Nfts can be resold on NFT marketplaces such as OpenSea or Rarible. If a Fehu NFT is resold there will be a 5% royalty fee to Fehu NFT DAO. The Cash Flow will be 100% transparent and allocated according to the Fehu Token and NFT holders votes.</p>
 								</div>
 							</div>
 						</div>
@@ -521,31 +516,15 @@
 						</div>
 
 						<div class="card">
-							<div class="card-header" id="headingTwelve">
-								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-									What traits does Fehu NFT have?
-								</a>
-							</div>
-							<div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion-snd">
-								<div class="card-body">
-									<h6 class="text-black">What traits does Fehu NFT have?</h6>
-									<p class="text-black">Primary sales of Fehu NFTs will be on FehuNFT.com from minting.
-										The Fehu Collection has more than 6 different traits and hundreds of possible combinations. The collection is designed by hand and digitized by our artists.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
 							<div class="card-header" id="headingThirteen">
 								<a class=" text-black background-light-green-1" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-									How many Fehu NFT can mint per wallet?
+									How many Fehu NFTs can be minted per wallet?
 								</a>
 							</div>
 							<div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6 class="text-black"> How many Fehu NFT can mint per wallet?</h6>
-									<p class="text-black">There is no limit per wallet. If you are quick enough, you can snatch as many as you can. However, there will be only 1 Fehu NFT available for one transaction.</p>
+									<h6 class="text-black"> How many Fehu NFTs can be minted per wallet?</h6>
+									<p class="text-black">There is no limit per wallet. If you are quick enough, you can snatch as many as you can. However, there will be only 1 Fehu NFT available for one transaction hence you will be subject to multiple gas fees.</p>
 								</div>
 							</div>
 						</div>
@@ -559,7 +538,7 @@
 							<div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion-snd">
 								<div class="card-body">
 									<h6 class="text-black">Can I purchase Fehu NFTs with my credit card?</h6>
-									<p class="text-black">At the moment is not possible, in order to purchase a Fehu NFT you will need to have a digital wallet with Fehu token or ETH currency. But we plan in the near future.
+									<p class="text-black">Currently it is not possible. To purchase a Fehu NFT you will need to own a crypto wallet with Fehu tokens for minting or ETH to buy it from secondary markets.
 									</p>
 								</div>
 							</div>
@@ -573,8 +552,8 @@
 							</div>
 							<div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion-snd">
 								<div class="card-body">
-									<h6 class="text-black">  How do I download and install MetaMask?</h6>
-									<p class="text-black">Go on the <a href="https://metamask.io/download/">metamask</a> official website and download Metamask plugin.
+									<h6 class="text-black">How do I download and install MetaMask?</h6>
+									<p class="text-black">Go on the <a href="https://metamask.io/download/">metamask</a> official website and download the MetaMask extension for browser.
 									</p>
 								</div>
 							</div>
@@ -589,7 +568,8 @@
 							<div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordion-snd">
 								<div class="card-body">
 									<h6 class="text-black">How Many Rewards Does a Token Have?</h6>
-									<p class="text-black">You can verify the amount of redemptions a token has by visiting the specific token’s page on fehu.nft and viewing the redemption count as marked by our redemption key symbol. Fehu NFT redemption counts are also viewable on OpenSea under a token’s properties. We will have a database with all the actions within the project.
+									<p class="text-black">
+										You can verify the number of prerogatives a token has by visiting the specific token’s page on fehu.nft and checking the redemption count as marked by our redemption key symbol. Fehu NFT redemption counts are also available on OpenSea under the token’s properties.
 									</p>
 								</div>
 							</div>
@@ -604,9 +584,9 @@
 		<div class="section padding-top-big background-image-cover" style="background-image: url({{ asset('storage/images/background-footer.png') }});">
 			<div class="container padding-bottom-big">
 				<div class="row justify-content-between">
-					<div class="col-lg-4">
-						<h6 class="text-black mb-4">Disclaimer</h6>
-						<p class="text-left text-black mb-0"><small>* all crypto investments are risky. We don't guarantee profit.</small></p>
+					<div class="col-lg-6">
+						<h6 class="text-black mb-4">Risk Disclaimer</h6>
+						<p class="text-left text-black mb-0"><small>* The trading of alternative cryptocurrencies has potential rewards, and it also has potential risks involved. Trading may not be suitable for all people. Anyone wishing to invest should seek his or her own independent financial or professional advice.</small></p>
 					</div>
 					<div class="col-lg-5 mt-4">
 						<ul class="footer-list">

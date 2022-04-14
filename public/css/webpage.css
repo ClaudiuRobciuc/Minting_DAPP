@@ -12476,7 +12476,7 @@ mark {
 }
 
 .menu-back.cbp-af-header-shrink.dark {
-  background-color: rgba(113, 190, 193, 0.98);
+  background-color: rgba(44, 191, 199, 0.98);
 }
 
 .cbp-af-header.cbp-af-header-shrink .navbar {
@@ -12780,7 +12780,7 @@ mark {
 .hero-center-wrap {
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 40%;
   left: 0;
   z-index: 2;
   transform: translateY(-50%);
@@ -14203,7 +14203,7 @@ input.btn.btn-primary {
   }
 
   .menu-back.dark {
-    background-color: rgba(113, 190, 193, 0.98);
+    background-color: rgba(44, 191, 199, 0.98);
   }
 
   .cbp-af-header.cbp-af-header-shrink {
@@ -14213,7 +14213,7 @@ input.btn.btn-primary {
   }
 
   .menu-back.cbp-af-header-shrink.dark {
-    background-color: rgba(131, 197, 192, 0.94);
+    background-color: rgba(44, 191, 199, 0.98);
   }
 
   .navbar-nav {

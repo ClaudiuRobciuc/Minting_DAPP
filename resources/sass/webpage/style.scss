@@ -358,7 +358,7 @@ mark{
 	transition : all 0.3s ease-out;
 }
 .menu-back.cbp-af-header-shrink.dark{
-	background-color: rgb(113 190 193 / 98%);
+	background-color: rgb(44, 191, 199, 0.98);
 }
 .cbp-af-header.cbp-af-header-shrink .navbar {
 	padding: 0;
@@ -651,7 +651,7 @@ mark{
 .hero-center-wrap{
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	z-index:2;
 	-webkit-transform: translateY(-50%);
@@ -1963,7 +1963,7 @@ input.btn.btn-primary{
 		padding-bottom: 5px;
 	}
 	.menu-back.dark{
-		background-color: rgba(113, 190, 193, 0.98);
+		background-color: rgb(44, 191, 199, 0.98);
 	}
 	.cbp-af-header.cbp-af-header-shrink {
 		background-color: rgba(250,250,250,1);
@@ -1971,7 +1971,7 @@ input.btn.btn-primary{
 		padding-bottom: 5px;
 	}
 	.menu-back.cbp-af-header-shrink.dark{
-		background-color: rgb(131 197 192 / 94%);;
+		background-color: rgb(44, 191, 199, 0.98);
 	}
 	.navbar-nav{
 		padding: 35px 0 !important;
