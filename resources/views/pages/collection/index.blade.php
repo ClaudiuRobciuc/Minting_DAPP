@@ -110,7 +110,7 @@
 				<div class="col-md-12">
 					<div class="title-wrap text-center">
 						<div class="back-title">about</div>
-						<h3 class="text-black">Our</h3>
+						<h3 class="text-black">Our collection</h3>
 					</div>
 				</div>
 				<div class="col-md-12">
@@ -164,15 +164,20 @@
 						<p class="text-black">Early bird access to NFTs and crypto releases</p>
 					</div>
 				</div>
-				<div class="col-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
+				<div class="col-md-4 offset-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
 					<div class="concept-box">
 						<img class="mb-4" src="{{ asset('storage/images/event.png') }}" alt="">
 						<h5 class="text-black">High Growth</h5>
 						<p class="text-black">Networking events with other crypto enthusiasts</p>
 					</div>
 				</div>
-				<p class="text-black" style="padding-bottom: 15px" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">If what you have read excites you as much as it excites us, you are already a FEHU. Put your wealth in motion and embark on our journey to the future! Stay true! Stay Fehu!</p>
-				
+			</div>
+			<div class="row" style="padding-top:2rem">
+				<div class="col-md-4 offset-md-4 mt-4 mt-md-0" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.7s">
+					<div class="concept-box">
+						<p class="text-black" style="padding-bottom: 15px">If what you have read excites you as much as it excites us, you are already a FEHU. Put your wealth in motion and embark on our journey to the future! Stay true! Stay Fehu!</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
