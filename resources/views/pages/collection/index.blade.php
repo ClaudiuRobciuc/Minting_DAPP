@@ -257,7 +257,7 @@
 							<img src="{{ asset('storage/images/rarity2.png') }}" alt="">
 						</div>
 					</div>
-					<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter right move 50px over 0.3s after 0.1s">
+					<div class="col-md-6 offset-md-1 align-self-center" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
 						<h4 class="text-black">What each rarity brings</h4>
 						<p class="text-black">	
 							Each rarity level will bring incrementally better rewards.

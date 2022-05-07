@@ -79,7 +79,7 @@
 		})
 
 		
-		//Countdown
+		/*Countdown
 			
 		const second = 1000,
 			minute = second * 60,
@@ -94,7 +94,7 @@
 			document.getElementById('hours').innerHTML = Math.floor((distance % (day)) / (hour)),
 			document.getElementById('minutes').innerHTML = Math.floor((distance % (hour)) / (minute)),
 			document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
-		}, second)
+		}, second)/*
 
 		
 		/* Roadmap Carousel */		
