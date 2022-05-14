@@ -69,7 +69,7 @@
 									</ul>
 								</li>
 								<li class="nav-item mt-2">
-									<a class="btn btn-primary btn-gradient" href="#app" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>MINT</span></a>
+									<a class="btn btn-primary btn-gradient" href="{{ route('app.nft.mint') }}" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24"><span>MINT</span></a>
 								</li>
 							</ul>
 						</div>
@@ -620,12 +620,12 @@
 						<p>FehuTeam© 2022</p>
 					</div>
 					<div class="col-lg-6 footer mt-4 mr-auto mt-lg-0 mr-lg-0 text-center text-lg-right">
-						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-twitter"></i></a>
-						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-linkedin"></i></a>
-						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-facebook"></i></a>
-						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-git"></i></a>
-						<a class="app-btn mx-2 mr-lg-3" href="#"><i class="fa fa-pinterest-p"></i></a>
-						<a class="app-btn mx-2 mr-lg-0" href="#"><i class="fa fa-paper-plane"></i></a>
+						<a class="app-btn mx-2 mr-lg-3" href="https://twitter.com/FehuToken"><i class="fa fa-twitter"></i></a>
+						<a class="app-btn mx-2 mr-lg-3" href="https://www.instagram.com/fehucrypto"><i class="fa fa-instagram"></i></a>
+						<a class="app-btn mx-2 mr-lg-3" href="https://www.facebook.com/profile.php?id=100075932531507"><i class="fa fa-facebook"></i></a>
+						<a class="app-btn mx-2 mr-lg-3" href="https://www.youtube.com/channel/UCb5WYZYxps-ubV5G4oLVHSA"><i class="fa fa-youtube"></i></a>
+						<a class="app-btn mx-2 mr-lg-3" href="https://t.me/fehutoken"><i class="fa fa-paper-plane"></i></a>
+						<a class="app-btn mx-2 mr-lg-0" href="https://www.reddit.com/r/FehuCryptoCommunity/"><i class="fa fa-reddit"></i></a>
 					</div>
 				</div>
 			</div>
