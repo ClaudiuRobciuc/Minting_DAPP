@@ -113,6 +113,11 @@
 						<h3 class="text-black">Our collection</h3>
 					</div>
 				</div>
+				<div class="col-md-8 offset-md-2" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
+					<div class="video-section video-shadow">
+						<iframe width="90%" height="45%" src="https://www.youtube.com/embed/uFKt3vaC18Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
 				<div class="col-md-12">
 					<h3 class="text-black">Story</h3>
 					<p class="text-black">
@@ -329,21 +334,7 @@
 							</div>	
 						</div>																
 					</div>
-				</div>
-				<div class="col-md-12 padding-top">
-					<div class="title-wrap text-center">
-						<h5 class="text-black">How it works:</h5>
-					</div>
-				</div>
-				<div class="col-md-8 offset-md-2" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.1s">
-					<div class="video-section video-shadow">
-						<figure class="vimeo"> 
-							<a href="https://player.vimeo.com/video/239566739">
-								<img src="{{ asset('storage/images/video-green.jpg') }}"" alt="image"/>
-							</a>
-						</figure>
-					</div>
-				</div>
+				</div>				
 			</div>	
 		</div>
 	</div>
