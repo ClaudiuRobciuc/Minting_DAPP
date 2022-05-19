@@ -121,8 +121,8 @@
 				<div class="col-md-12">
 					<h3 class="text-black">Story</h3>
 					<p class="text-black">
-						Once upon a time, the Earth was populated by shapeshifters and mythical creatures coexisting with the humankind, all under the rule of the mighty Dagda, the leader of all gods. 
-						In these magical chapters of history, the most exquisite nuances of existence were splattered by the Animal Guardians, every single one of which embodied the darkest, as well as the brightest corners of the human behavior. 
+						Once upon a time, the Earth was populated by shapeshifters and mythical creatures coexisting with  mankind, all under the rule of the mighty Dagda, the leader of all gods. 
+						In these magical chapters of history, the most exquisite nuances of existence were splattered by the Animal Guardians, every single one of which embodied the darkest, as well as the brightest corners of human behavior. 
 						Each animal marked a specific timeframe within the planetary movements, and would protect those born in it, guiding and shaping their life paths.
 					</p>
 				</div>
@@ -208,10 +208,11 @@
 					<p class="text-black">
 						As for numbers, we are expecting during our first year to organize 1 event monthly, which is planned 1-3 months ahead based on the event size. The ticket claim will work as following based on rarity:
 						<ul>
-							<li class="text-black">3 claims a year for Common</li>
-							<li class="text-black">5 claims a year for Rare</li>
-							<li class="text-black">8 claims a year for Epic</li>
-							<li class="text-black">12 claims a year for Legendary and Mythic</li>
+							<li class="text-black">1 claims a year for Common</li>
+							<li class="text-black">2 claims a year for Rare</li>
+							<li class="text-black">3 claims a year for Epic</li>
+							<li class="text-black">4 claims a year for Legendary</li>
+							<li class="text-black">5 claims a year for Mythic</li>
 						</ul>
 						<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 							These numbers are subject to change based on budget, # of holders and market cap. This is currently just an estimate.
@@ -221,7 +222,7 @@
 						Early bird access to NFTs and crypto releases:
 					</p>
 					<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
-						High value NFT and FehuToken holders, will have early access to the minting platform for 30 out of 100 NFTs released every month.
+						High value NFT and FehuToken holders, will have early access to the minting platform for 20 out of 50 NFTs released every month.
 					</p>
 				</div>
 			</div>	
@@ -234,13 +235,13 @@
 				<div class="row">
 					<div class="col-md-6 align-self-center" data-scroll-reveal="enter left move 50px over 0.3s after 0.1s">
 						<h4 class="text-black">Collection Rarity Distribution</h4>
-						<p class="lead text-black">Each collection will be capped at 100 pieces. The rarity distribution will be as follows:</p>
+						<p class="lead text-black">Each collection will be capped at 50 pieces. The rarity distribution will be as follows:</p>
 						<ul>
-							<li class="text-black">48 Commons</li>
-							<li class="text-black">25 Rares</li>
-							<li class="text-black">15 Epics</li>
-							<li class="text-black">8 Legendaries</li>
-							<li class="text-black">4 Mythics</li>
+							<li class="text-black">20 Commons</li>
+							<li class="text-black">14 Rares</li>
+							<li class="text-black">8 Epics</li>
+							<li class="text-black">5 Legendaries</li>
+							<li class="text-black">3 Mythics</li>
 						</ul>
 					</div>
 					<div class="col-md-5 offset-md-1 order-first order-md-last mb-4 mb-md-0">
