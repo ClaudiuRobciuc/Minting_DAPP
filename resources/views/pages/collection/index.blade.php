@@ -208,7 +208,7 @@
 					<p class="text-black">
 						As for numbers, we are expecting during our first year to organize 1 event monthly, which is planned 1-3 months ahead based on the event size. The ticket claim will work as following based on rarity:
 						<ul>
-							<li class="text-black">1 claims a year for Common</li>
+							<li class="text-black">1 claim a year for Common</li>
 							<li class="text-black">2 claims a year for Rare</li>
 							<li class="text-black">3 claims a year for Epic</li>
 							<li class="text-black">4 claims a year for Legendary</li>
@@ -300,15 +300,15 @@
 					</div>
 					<div id="owl-roadmap" class="owl-carousel owl-theme">											
 						<div class="item blue-gradient">						 
-							<div class="roadmap-box background-light-green-1">
-								<p class="mb-4 achieved"><span>Achieved</span></p>
+							<div class="roadmap-box current-road background-light-green-1">
+								<p class="mb-4"><span>Current</span></p>
 								<h6 class="text-black">Phase 1</h6>
 								<p class="text-black">First collection NFT launched on OpenSea</p>
 							</div>	
-						</div>											
+						</div>							
 						<div class="item blue-gradient"> 						 
-							<div class="roadmap-box current-road background-light-green-1 roadmap-shadow">
-								<p class="mb-4"><span>Current</span></p>
+							<div class="roadmap-box next-road background-light-green-1">
+								<p class="mb-4 plan"><span>Plan</span></p>
 								<h6 class="text-black">Phase 2</h6>
 								<p class="text-black">When over 50% of first collection NFTs are sold, we will organize our DAO on snapshot.org</p>
 							</div>	
