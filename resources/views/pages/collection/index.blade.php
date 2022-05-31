@@ -95,7 +95,7 @@
 								It all starts with our NFT collection, which will embark you on a mythical journey through art, while giving you the freedom to choose what you want for the future of the D.A.O.
 							</p>
 							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="https://fehutoken.com" target="_blank" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-ps2id-offset="68" ><span>Fehu Token</span></a>
-							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="#buy" role="button" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Buy on OpenSea</span></a>
+							<a class="btn btn-primary btn-gradient mx-0 js-tilt" href="https://opensea.io/collection/fehu-guardians" target="_blank" data-tilt-perspective="300" data-tilt-speed="700" data-tilt-max="24" data-gal="m_PageScroll2id" data-ps2id-offset="68" ><span>Buy on OpenSea</span></a>
 						</div>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 					</br></br>
 						With a robust long-term vision revolving around empowering the community to build their own D.A.O and support their financial success, there are plenty of things to look forward to in 2022.
 					</br></br>
-						The Fehu D.A.O debuts with a mintable NFT collection capitalizing on the community’s yearning for utility. Their main purpose is to prove once and for all that NFTs are not just avatars, but the future of decentralization. 
+						The <b>Fehu D.A.O</b> debuts with a mintable NFT collection capitalizing on the community’s yearning for utility. Their main purpose is to prove once and for all that NFTs are not just avatars, but the future of decentralization. 
 					</p>
 					<p class="text-black">
 						Besides constant new releases and a story that takes shape before your eyes, everything you own comes with decision-making power. You get to build the Web 3.0 universe and a business alongside us, while enjoying infinite perks:
@@ -208,21 +208,24 @@
 					<p class="text-black">
 						As for numbers, we are expecting during our first year to organize 1 event monthly, which is planned 1-3 months ahead based on the event size. The ticket claim will work as following based on rarity:
 						<ul>
-							<li class="text-black">1 claim a year for Common</li>
-							<li class="text-black">2 claims a year for Rare</li>
-							<li class="text-black">3 claims a year for Epic</li>
-							<li class="text-black">4 claims a year for Legendary</li>
-							<li class="text-black">5 claims a year for Mythic</li>
+							<li class="text-black"><b>1 claim</b> a year for <b>Core</b></li>
+							<li class="text-black"><b>2 claims</b> a year for <b>Rare</b></li>
+							<li class="text-black"><b>3 claims</b> a year for <b>Epic</b></li>
+							<li class="text-black"><b>4 claims</b> a year for <b>Legendary</b></li>
+							<li class="text-black"><b>5 claims</b> a year for <b>Mythic</b></li>
 						</ul>
 						<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 							These numbers are subject to change based on budget, # of holders and market cap. This is currently just an estimate.
+						</p>
+						<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
+							<b>Only holders of both NFT and FehuToken will be eligible for a claim. The amount of holded tokens is still yet to be decided.</b>
 						</p>
 					</p>
 					<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
 						Early bird access to NFTs and crypto releases:
 					</p>
 					<p class="text-black" data-scroll-reveal="enter bottom move 50px over 0.3s after 0.5s">
-						High value NFT and FehuToken holders, will have early access to the minting platform for 20 out of 50 NFTs released every month.
+						<b>High value NFT and FehuToken holders, will have early access to the minting platform for 20 out of 50 NFTs released every month.</b>
 					</p>
 				</div>
 			</div>	
@@ -300,17 +303,17 @@
 					</div>
 					<div id="owl-roadmap" class="owl-carousel owl-theme">											
 						<div class="item blue-gradient">						 
-							<div class="roadmap-box current-road background-light-green-1">
-								<p class="mb-4"><span>Current</span></p>
+							<div class="roadmap-box background-light-green-1">
+								<p class="mb-4 achieved"><span>Achieved</span></p>
 								<h6 class="text-black">Phase 1</h6>
 								<p class="text-black">First collection NFT launched on OpenSea</p>
 							</div>	
 						</div>							
 						<div class="item blue-gradient"> 						 
-							<div class="roadmap-box next-road background-light-green-1">
-								<p class="mb-4 plan"><span>Plan</span></p>
+							<div class="roadmap-box current-road background-light-green-1">
+								<p class="mb-4 plan"><span>Current</span></p>
 								<h6 class="text-black">Phase 2</h6>
-								<p class="text-black">When over 50% of first collection NFTs are sold, we will organize our DAO on snapshot.org</p>
+								<p class="text-black">We will organise NFT giveways and post the rest on sale, afterwards we will organize our <b>DAO on snapshot.org</b> when the majority of NFTs have owners</p>
 							</div>	
 						</div>												
 						<div class="item blue-gradient"> 						 
@@ -408,7 +411,7 @@
 							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 								<div class="card-body">
 									<h6 class="text-black">	What is so special about this NFT collection?</h6>
-									<p class="text-black">Each NFT will have unique traits and meaning while providing metadata with on-chain storage of media. Fehu NFTs are all about utility, each NFT bringing different levels of decision power within the Fehu DAO and access to activities through the proof of ownership associated with smart contracts. They will act as a key for you to attend worldwide events and tailor the journey of our organization.</p>
+									<p class="text-black">Each NFT will have unique traits and meaning while providing metadata with on-chain storage of media. Fehu NFTs are all about utility, each NFT bringing different levels of decision power within the <b>Fehu DAO</b> and access to <b>activities</b> through the proof of ownership associated with smart contracts. They will act as a key for you to attend worldwide events and tailor the journey of our organization.</p>
 								</div>
 							</div>
 						</div>
