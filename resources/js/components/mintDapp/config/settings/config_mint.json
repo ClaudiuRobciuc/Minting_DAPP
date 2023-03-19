@@ -1,0 +1,20 @@
+{
+  "CONTRACT_ADDRESS": "0x147429541865de7cFFE71d21e18f6E68109017f0",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x147429541865de7cFFE71d21e18f6E68109017f0",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "Fehu Guardians",
+  "SYMBOL": "Guardians",
+  "MAX_SUPPLY": 50,
+  "WEI_COST": 0,
+  "DISPLAY_COST": 1000000,
+  "FEHU_COST": 1000000000000000,
+  "MAX_MINT": 2,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/fehu-guardians",
+  "SHOW_BACKGROUND": true
+}

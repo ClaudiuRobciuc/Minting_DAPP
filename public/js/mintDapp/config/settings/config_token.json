@@ -1,0 +1,10 @@
+{
+  "CONTRACT_ADDRESS": "0x66948162139374D8fC08800b17e4c59B058f9698",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x66948162139374D8fC08800b17e4c59B058f9698",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "GAS_LIMIT": 285000
+}

@@ -34,41 +34,62 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    const abiResponse = await fetch("./js/mintDapp/config/settings/abi.json", {
+    const abiResponseMint = await fetch("./js/mintDapp/config/settings/abi_mint.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
     });
-    const abi = await abiResponse.json();
-    const configResponse = await fetch("./js/mintDapp/config/settings/config.json", {
+    const abiMint = await abiResponseMint.json();
+    const configResponseMint = await fetch("./js/mintDapp/config/settings/config_mint.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
     });
-    const CONFIG = await configResponse.json();
+    const abiResponseToken = await fetch("./js/mintDapp/config/settings/abi_token.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const abiToken = await abiResponseToken.json();
+    const configResponseToken = await fetch("./js/mintDapp/config/settings/config_token.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const CONFIG_MINT = await configResponseMint.json();
+    const CONFIG_TOKEN = await configResponseToken.json();
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);
       try {
+        
         const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
+        
         const networkId = await ethereum.request({
           method: "net_version",
         });
-        if (networkId == CONFIG.NETWORK.ID) {
-          const SmartContractObj = new Web3EthContract(
-            abi,
-            CONFIG.CONTRACT_ADDRESS
+        if (networkId == CONFIG_MINT.NETWORK.ID && networkId == CONFIG_TOKEN.NETWORK.ID) {
+          const SmartContractMint = new Web3EthContract(
+            abiMint,
+            CONFIG_MINT.CONTRACT_ADDRESS
+          );
+          const SmartContractToken = new Web3EthContract(
+            abiToken,
+            CONFIG_TOKEN.CONTRACT_ADDRESS
           );
           dispatch(
             connectSuccess({
               account: accounts[0],
-              smartContract: SmartContractObj,
+              smartContractToken: SmartContractToken,
+              smartContractMint: SmartContractMint,
               web3: web3,
             })
           );
