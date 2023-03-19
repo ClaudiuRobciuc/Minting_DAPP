@@ -53,8 +53,10 @@ mix.webpackConfig({
 
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/dapp.js', 'public/js')
-    .copy('resources/js/components/mintDapp/config/settings/config.json', 'public/js/mintDapp/config/settings/config.json')
-    .copy('resources/js/components/mintDapp/config/settings/abi.json', 'public/js/mintDapp/config/settings/abi.json')
+    .copy('resources/js/components/mintDapp/config/settings/config_mint.json', 'public/js/mintDapp/config/settings/config_mint.json')
+    .copy('resources/js/components/mintDapp/config/settings/abi_mint.json', 'public/js/mintDapp/config/settings/abi_mint.json')
+    .copy('resources/js/components/mintDapp/config/settings/config_token.json', 'public/js/mintDapp/config/settings/config_token.json')
+    .copy('resources/js/components/mintDapp/config/settings/abi_token.json', 'public/js/mintDapp/config/settings/abi_token.json')
     .react()
     .postCss('resources/css/app.css', 'public/css', [
         //

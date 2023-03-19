@@ -1,3 +1,2 @@
 
-## About Laravel
-Fehu Dapp
+## Mint NFT with ERC20 token Laravel + React

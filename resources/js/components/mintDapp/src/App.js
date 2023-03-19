@@ -32,7 +32,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: #104255;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -97,6 +97,10 @@ font-size: 13px;
   :hover:after{
     opacity: 1; 
   }
+  :disabled{
+    background: #8f8e8e !important;
+    color: #c5c5c5;
+  }
 `;
 
 export const ResponsiveWrapper = styled.div`
@@ -145,9 +149,10 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [tokenApproval, setTokenApproval] = useState(false);
+  const [feedback, setFeedback] = useState(`Approve tokens then MINT your NFT`);
   const [mintAmount, setMintAmount] = useState(1);
-  const [CONFIG, SET_CONFIG] = useState({
+  const [CONFIG_MINT, SET_CONFIG_MINT] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
     NETWORK: {
@@ -155,6 +160,7 @@ function App() {
       SYMBOL: "",
       ID: 0,
     },
+    MAX_MINT: 1,
     NFT_NAME: "",
     SYMBOL: "",
     MAX_SUPPLY: 1,
@@ -165,38 +171,101 @@ function App() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
+  const [CONFIG_TOKEN, SET_CONFIG_TOKEN] = useState({
+    CONTRACT_ADDRESS: "",
+    SCAN_LINK: "",
+    NETWORK: {
+      NAME: "",
+      SYMBOL: "",
+      ID: 0,
+    },
+  GAS_LIMIT: 0,
+  });
+
   const comingSoon = false;
 
-  const claimNFTs = () => {
-    let cost = CONFIG.WEI_COST;
-    let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
-    let totalGasLimit = String(gasLimit * mintAmount);
-    console.log("Cost: ", totalCostWei);
+  const approveFehu = () => {
+    let gasLimit = CONFIG_TOKEN.GAS_LIMIT;
+    let totalGasLimit = String(gasLimit);
+    let cost = CONFIG_MINT.FEHU_COST;
     console.log("Gas limit: ", totalGasLimit);
-    setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
+    setFeedback(`Approving FEHU token spending...`);
+    setTokenApproval(true);
+
+    blockchain.smartContractToken.methods.approve(CONFIG_MINT.CONTRACT_ADDRESS, mintAmount * cost)
+      .estimateGas({from: blockchain.account})
+      .then(function(gasAmount){
+        blockchain.smartContractToken.methods
+        .approve(CONFIG_MINT.CONTRACT_ADDRESS, mintAmount * cost)
+        .send({
+          gasLimit: String(totalGasLimit),
+          to: CONFIG_TOKEN.CONTRACT_ADDRESS,
+          from: blockchain.account,
+          gasAmount: gasAmount,
+          value: 0,
+        }).on('receipt', function(receipt) {
+          console.log(receipt);
+          setFeedback(
+            `Token spending approval successfull!`
+          );
+          setTokenApproval(false);
+          dispatch(fetchData(mintAmount, blockchain.account));
+        }).on('error', function(error){
+          console.log(error);
+          setFeedback("Transaction Rejected. Try again.");
+          setTokenApproval(false);
+        });
+      })
+      .catch(function(error){
+        console.log(error);
+        setFeedback("Sorry, gas estimation failed");
+        setTokenApproval(false);
+    });
+  }
+
+  const claimNFTs = () => {
+    if(!data.checkAllowance){
+      setFeedback("Sorry, not enough FEHU allowance provided.");
+      return;
+    }
+
+    let gasLimit = CONFIG_MINT.GAS_LIMIT;
+    let totalGasLimit = String(gasLimit * mintAmount);
+
+    console.log("Gas limit: ", totalGasLimit);
+    setFeedback(`Minting your ${CONFIG_MINT.NFT_NAME}...`);
     setClaimingNft(true);
-    blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
-      .send({
-        gasLimit: String(totalGasLimit),
-        to: CONFIG.CONTRACT_ADDRESS,
-        from: blockchain.account,
-        value: totalCostWei,
+    blockchain.smartContractMint.methods.mint(blockchain.account, mintAmount)
+      .estimateGas({from: blockchain.account})
+      .then(function(gasAmount){
+        blockchain.smartContractMint.methods
+        .mint(blockchain.account, mintAmount)
+        .send({
+          gasLimit: String(totalGasLimit),
+          to: CONFIG_MINT.CONTRACT_ADDRESS,
+          from: blockchain.account,
+          gasAmount: gasAmount,
+          value: 0,
+          })
+        .on('receipt', function(receipt) {
+          console.log(receipt);
+          setFeedback(
+            `WOW, the ${CONFIG_MINT.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          );
+          setClaimingNft(false);
+          dispatch(fetchData(mintAmount, blockchain.account));
+        }).on('error', function(error){
+          console.log(error);
+          setFeedback("Sorry, something went wrong please try again later.");
+          setClaimingNft(false);
+        });
       })
-      .once("error", (err) => {
-        console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+      .catch(function(error){
+        console.log(error);
+        setFeedback("Sorry, gas estimation failed");
         setClaimingNft(false);
-      })
-      .then((receipt) => {
-        console.log(receipt);
-        setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
-        );
-        setClaimingNft(false);
-        dispatch(fetchData(blockchain.account));
-      });
+    });
+    
   };
 
   const decrementMintAmount = () => {
@@ -205,24 +274,32 @@ function App() {
       newMintAmount = 1;
     }
     setMintAmount(newMintAmount);
+    dispatch(fetchData(newMintAmount, blockchain.account));
   };
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 50) {
-      newMintAmount = 50;
+
+    if (newMintAmount > CONFIG_MINT.MAX_MINT) {
+      newMintAmount = CONFIG_MINT.MAX_MINT;
     }
+   
+    if (newMintAmount > CONFIG_MINT.MAX_SUPPLY - data.totalSupply) {
+      newMintAmount = data.totalSupply;
+    }
+  
     setMintAmount(newMintAmount);
+    dispatch(fetchData(newMintAmount, blockchain.account));
   };
 
   const getData = () => {
-    if (blockchain.account !== "" && blockchain.smartContract !== null) {
-      dispatch(fetchData(blockchain.account));
+    if (blockchain.account !== "" && blockchain.smartContractMint !== null && blockchain.smartContractToken !== null) {
+      dispatch(fetchData(mintAmount ?? 1, blockchain.account));
     }
   };
 
-  const getConfig = async () => {
-    const configResponse = await fetch("./js/mintDapp/config/settings/config.json", {
+  const getConfigMint = async () => {
+    const configResponse = await fetch("./js/mintDapp/config/settings/config_mint.json", {
       headers: {
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -230,11 +307,24 @@ function App() {
     });
     const config = await configResponse.json();
     console.log(config);
-    SET_CONFIG(config);
+    SET_CONFIG_MINT(config);
+  };
+
+  const getConfigToken = async () => {
+    const configResponse = await fetch("./js/mintDapp/config/settings/config_token.json", {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+    });
+    const config = await configResponse.json();
+    console.log(config);
+    SET_CONFIG_TOKEN(config);
   };
 
   useEffect(() => {
-    getConfig();
+    getConfigMint();
+    getConfigToken();
   }, []);
 
   useEffect(() => {
@@ -248,9 +338,9 @@ function App() {
           flex={1}
           ai={"center"}
           style={{ padding: 24, backgroundColor: "white" }}
-          image={CONFIG.SHOW_BACKGROUND ? "./storage/images/bg.png" : null}
+          image={CONFIG_MINT.SHOW_BACKGROUND ? "./storage/images/bg.png" : null}
         >
-          <a href={CONFIG.MARKETPLACE_LINK}>
+          <a href={CONFIG_MINT.MARKETPLACE_LINK}>
             <StyledLogo alt={"logo"} src={"./storage/images/logo.png"} />
           </a>
           <s.SpacerSmall />
@@ -279,7 +369,7 @@ function App() {
                   color: "var(--accent-text)",
                 }}
               >
-                {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+                {data.totalSupply} / {CONFIG_MINT.MAX_SUPPLY}
               </s.TextTitle>
               <s.TextDescription
                 style={{
@@ -287,8 +377,8 @@ function App() {
                   color: "var(--primary-text)",
                 }}
               >
-                <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                  {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+                <StyledLink target={"_blank"} href={CONFIG_MINT.SCAN_LINK}>
+                  {truncate(CONFIG_MINT.CONTRACT_ADDRESS, 21)}
                 </StyledLink>
               </s.TextDescription>
               <span
@@ -311,14 +401,14 @@ function App() {
                     margin: "5px",
                   }}
                   onClick={(e) => {
-                    window.open(CONFIG.MARKETPLACE_LINK, "_blank");
+                    window.open(CONFIG_MINT.MARKETPLACE_LINK, "_blank");
                   }}
                 >
-                  {CONFIG.MARKETPLACE}
+                  {CONFIG_MINT.MARKETPLACE}
                 </GradientButton>
               </span>
               <s.SpacerSmall />
-              {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+              {Number(data.totalSupply) >= CONFIG_MINT.MAX_SUPPLY ? (
                 <>
                   <s.TextTitle
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -328,11 +418,11 @@ function App() {
                   <s.TextDescription
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
                   >
-                    You can still find {CONFIG.NFT_NAME} on
+                    You can still find {CONFIG_MINT.NFT_NAME} on
                   </s.TextDescription>
                   <s.SpacerSmall />
-                  <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                    {CONFIG.MARKETPLACE}
+                  <StyledLink target={"_blank"} href={CONFIG_MINT.MARKETPLACE_LINK}>
+                    {CONFIG_MINT.MARKETPLACE}
                   </StyledLink>
                 </>
               ) : (
@@ -340,8 +430,8 @@ function App() {
                   <s.TextTitle
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
                   >
-                    1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                    {CONFIG.NETWORK.SYMBOL}.
+                    1 {CONFIG_MINT.SYMBOL} costs {CONFIG_MINT.DISPLAY_COST}{" "}
+                    {CONFIG_MINT.NETWORK.SYMBOL}.
                   </s.TextTitle>
                   <s.SpacerXSmall />
                   <s.TextDescription
@@ -351,7 +441,7 @@ function App() {
                   </s.TextDescription>
                   <s.SpacerSmall />
                   {blockchain.account === "" ||
-                  blockchain.smartContract === null ? (
+                  (blockchain.smartContractMint === null && blockchain.smartContractToken === null ) ? (
                     <s.Container ai={"center"} jc={"center"}>
                       <s.TextDescription
                         style={{
@@ -359,7 +449,7 @@ function App() {
                           color: "var(--accent-text)",
                         }}
                       >
-                        Connect to the {CONFIG.NETWORK.NAME} network
+                        Connect to the {CONFIG_MINT.NETWORK.NAME} network
                       </s.TextDescription>
                       <s.SpacerSmall />
                       <GradientButton
@@ -430,14 +520,24 @@ function App() {
                       <s.SpacerSmall />
                       <s.Container ai={"center"} jc={"center"} fd={"row"}>
                         <GradientButton
-                          disabled={claimingNft ? 1 : 0}
+                          disabled={tokenApproval ? 1 : (!data.checkAllowance ? 0 : 1)}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            approveFehu();
+                            getData();
+                          }}
+                        >
+                          {tokenApproval ? "BUSY" : (!data.checkAllowance ? "APPROVE SPEND" : "Press Mint NFT")}
+                        </GradientButton>
+                        <GradientButton
+                          disabled={claimingNft ? 1 : (!data.checkAllowance ? 0 : 1)}
                           onClick={(e) => {
                             e.preventDefault();
                             claimNFTs();
                             getData();
                           }}
                         >
-                          {claimingNft ? "BUSY" : "BUY"}
+                          {claimingNft ? "BUSY" : (!data.checkAllowance ? "Approve Tokens First" : "Mint NFT")}
                         </GradientButton>
                       </s.Container>
                     </>
@@ -464,7 +564,7 @@ function App() {
               }}
             >
               Please make sure you are connected to the right network (
-              {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+              {CONFIG_MINT.NETWORK.NAME} Mainnet) and the correct address. Please note:
               Once you make the purchase, you cannot undo this action.
             </s.TextDescription>
             <s.SpacerSmall />
@@ -474,7 +574,7 @@ function App() {
                 color: "var(--primary-text)",
               }}
             >
-              We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
+              We have set the gas limit to {CONFIG_MINT.GAS_LIMIT} for the contract to
               successfully mint your NFT. We recommend that you don't lower the
               gas limit.
             </s.TextDescription>
@@ -489,7 +589,7 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 24, backgroundColor: "white" }}
-        image={CONFIG.SHOW_BACKGROUND ? "./storage/images/background_box.png" : null}
+        image={CONFIG_MINT.SHOW_BACKGROUND ? "./storage/images/background_box.png" : null}
       >
         <a href="/">
           <StyledLogo alt={"logo"} src={"./storage/images/LOGO_2.png"} />
@@ -513,15 +613,194 @@ function App() {
             }}
           >
             <s.TextTitle
-              style={{
-                textAlign: "center",
-                fontSize: 50,
-                fontWeight: "bold",
-                color: "var(--accent-text)",
-              }}
-            >
-              Mint Coming Soon...
-            </s.TextTitle>
+                style={{
+                  textAlign: "center",
+                  fontSize: 50,
+                  fontWeight: "bold",
+                  color: "var(--accent-text)",
+                }}
+              >
+                {data.totalSupply} / {CONFIG_MINT.MAX_SUPPLY}
+              </s.TextTitle>
+              <s.TextDescription
+                style={{
+                  textAlign: "center",
+                  color: "var(--primary-text)",
+                }}
+              >
+                <StyledLink target={"_blank"} href={CONFIG_MINT.SCAN_LINK}>
+                  {truncate(CONFIG_MINT.CONTRACT_ADDRESS, 15)}
+                </StyledLink>
+              </s.TextDescription>
+              <span
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <GradientButton
+                  onClick={(e) => {
+                    window.open("./storage/roadmap.pdf", "_blank");
+                  }}
+                  style={{
+                    margin: "5px",
+                  }}
+                >
+                  Roadmap
+                </GradientButton>
+                <GradientButton
+                  style={{
+                    margin: "5px",
+                  }}
+                  onClick={(e) => {
+                    window.open(CONFIG_MINT.MARKETPLACE_LINK, "_blank");
+                  }}
+                >
+                  {CONFIG_MINT.MARKETPLACE}
+                </GradientButton>
+              </span>
+              <s.SpacerSmall />
+              {Number(data.totalSupply) >= CONFIG_MINT.MAX_SUPPLY ? (
+                <>
+                  <s.TextTitle
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    The sale has ended.
+                  </s.TextTitle>
+                  <s.TextDescription
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    You can still find {CONFIG_MINT.NFT_NAME} on
+                  </s.TextDescription>
+                  <s.SpacerSmall />
+                  <StyledLink target={"_blank"} href={CONFIG_MINT.MARKETPLACE_LINK}>
+                    {CONFIG_MINT.MARKETPLACE}
+                  </StyledLink>
+                </>
+              ) : (
+                <>
+                  <s.TextTitle
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    Fehu Guardians MINT
+                  </s.TextTitle>
+                  <s.SpacerXSmall />
+                  <s.TextDescription
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    <p>1 {CONFIG_MINT.SYMBOL} costs {CONFIG_MINT.DISPLAY_COST}{" "} FEHU.</p>
+                    <p>You can buy FehuToken on  
+                      <StyledLink target={"_blank"} href={"https://app.uniswap.org/#/swap?outputCurrency=0x552a033B6Ed14b25c1B47b58a86c9A3F9fc9c87B"}>
+                      &nbsp;Uniswap
+                      </StyledLink>.
+                    </p>
+                    <p>FehuToken Address: 0x552a033B6Ed14b25c1B47b58a86c9A3F9fc9c87B</p> 
+                  </s.TextDescription>
+                  <s.SpacerSmall />
+                  {blockchain.account === "" ||
+                  (blockchain.smartContractMint === null && blockchain.smartContractToken === null ) ? (
+                    <s.Container ai={"center"} jc={"center"}>
+                      <s.TextDescription
+                        style={{
+                          textAlign: "center",
+                          color: "var(--accent-text)",
+                        }}
+                      >
+                        Connect to the {CONFIG_MINT.NETWORK.NAME} network
+                      </s.TextDescription>
+                      <s.SpacerSmall />
+                      <GradientButton
+                        onClick={(e) => {
+                          e.preventDefault();
+                          dispatch(connect());
+                          getData();
+                        }}
+                      >
+                        CONNECT
+                      </GradientButton>
+                      {blockchain.errorMsg !== "" ? (
+                        <>
+                          <s.SpacerSmall />
+                          <s.TextDescription
+                            style={{
+                              textAlign: "center",
+                              color: "var(--accent-text)",
+                            }}
+                          >
+                            {blockchain.errorMsg}
+                          </s.TextDescription>
+                        </>
+                      ) : null}
+                    </s.Container>
+                  ) : (
+                    <>
+                      <s.TextDescription
+                        style={{
+                          textAlign: "center",
+                          color: "var(--accent-text)",
+                        }}
+                      >
+                        {feedback}
+                      </s.TextDescription>
+                      <s.SpacerMedium />
+                      <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                        <StyledRoundButton
+                          style={{ lineHeight: 0.4 }}
+                          disabled={claimingNft ? 1 : 0}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            decrementMintAmount();
+                          }}
+                        >
+                          -
+                        </StyledRoundButton>
+                        <s.SpacerMedium />
+                        <s.TextDescription
+                          style={{
+                            textAlign: "center",
+                            color: "var(--accent-text)",
+                          }}
+                        >
+                          {mintAmount}
+                        </s.TextDescription>
+                        <s.SpacerMedium />
+                        <StyledRoundButton
+                          disabled={claimingNft ? 1 : 0}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            incrementMintAmount();
+                          }}
+                        >
+                          +
+                        </StyledRoundButton>
+                      </s.Container>
+                      <s.SpacerSmall />
+                      <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                        <GradientButton
+                          disabled={tokenApproval ? 1 : (!data.checkAllowance ? 0 : 1)}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            approveFehu();
+                            getData();
+                          }}
+                        >
+                          {tokenApproval ? "BUSY" : (!data.checkAllowance ? "APPROVE SPEND" : "Press Mint NFT")}
+                        </GradientButton>
+                        <GradientButton
+                          disabled={claimingNft ? 1 : (!data.checkAllowance ? 1 : 0)}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            claimNFTs();
+                            getData();
+                          }}
+                        >
+                          {claimingNft ? "BUSY" : (!data.checkAllowance ? "Approve Tokens First" : "Mint NFT")}
+                        </GradientButton>
+                      </s.Container>
+                    </>
+                  )}
+                </>
+              )}
+              <s.SpacerMedium />
 
           </s.Container>
           <s.SpacerLarge />
